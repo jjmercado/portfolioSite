@@ -4,5 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+  app: {
+    baseURL: '/portfolioSite/' // Ersetze 'dein-projektname' mit dem Namen deines GitHub-Repos!
+  }
 })
