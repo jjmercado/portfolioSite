@@ -19,9 +19,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Aktuelle LTS-Version von Node.js
+          node-version: '24' # Aktuelle LTS-Version von Node.js
 
-      # 3. Abhängigkeiten installieren (wie npm install)
+      # 3. Abhängigkeiten installieren (wie npm install)git 
       - name: Install Dependencies
         run: npm install
 
