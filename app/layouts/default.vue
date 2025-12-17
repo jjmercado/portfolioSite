@@ -10,11 +10,13 @@
     <div class="portfolio-container">
       <!-- 1. Header / Navigation -->
       <header class="main-header">
-        <div class="logo">Jeremy's Devlog</div>
+        <div class="logo">
+          <NuxtLink to="/">Jeremy's Devlog</NuxtLink>
+        </div>
         <nav>
           <a href="#games">Spiele</a>
           <a href="#about">Über mich</a>
-          <a href="#devlog">Devlog</a>
+          <NuxtLink to="/devlog">Devlog</NuxtLink>
           <a href="#contact">Kontakt</a>
         </nav>
       </header>
