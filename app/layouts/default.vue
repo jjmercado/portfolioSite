@@ -14,7 +14,7 @@
           <NuxtLink to="/">Jeremy's Devlog</NuxtLink>
         </div>
         <nav>
-          <a href="#games">Spiele</a>
+          <NuxtLink to="/games">Spiele</NuxtLink>
           <a href="#about">Über mich</a>
           <NuxtLink to="/devlog">Devlog</NuxtLink>
           <a href="#contact">Kontakt</a>
