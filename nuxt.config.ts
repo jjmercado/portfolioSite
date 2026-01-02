@@ -8,5 +8,5 @@ export default defineNuxtConfig({
   ],
   app: {
     baseURL: '/portfolioSite/' // Ersetze 'dein-projektname' mit dem Namen deines GitHub-Repos!
-  }
+  },
 })

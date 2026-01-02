@@ -9,8 +9,8 @@
             <NuxtLink to="/games/dungeon-crawler" class="group block">
             <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-cyan-500/20">
                 <div class="w-full h-48 overflow-hidden">
-                    <img src="/images/games/placeholder.png" alt="Dungeon Crawler Standbild" class="w-full h-full object-cover block group-hover:hidden">
-                    <img src="/images/games/placeholder.gif" alt="Dungeon Crawler Animation" class="w-full h-full object-cover hidden group-hover:block">
+                    <img src="/images/games/crawler/placeholder.png" alt="Dungeon Crawler Standbild" class="w-full h-full object-cover block group-hover:hidden">
+                    <img src="/images/games/crawler/placeholder.gif" alt="Dungeon Crawler Animation" class="w-full h-full object-cover hidden group-hover:block">
                 </div>
                 
                 <div class="p-6 flex-grow flex flex-col">
@@ -30,8 +30,8 @@
             <NuxtLink to="/games/space-trader" class="group block">
             <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-rose-500/20">
                 <div class="w-full h-48 overflow-hidden">
-                    <img src="/images/games/placeholder.png" alt="Space Trader Standbild" class="w-full h-full object-cover block group-hover:hidden">
-                    <img src="/images/games/placeholder.gif" alt="Space Trader Animation" class="w-full h-full object-cover hidden group-hover:block">
+                    <img src="/images/games/dungeon/placeholder.png" alt="Space Trader Standbild" class="w-full h-full object-cover block group-hover:hidden">
+                    <img src="/images/games/dungeon/placeholder.gif" alt="Space Trader Animation" class="w-full h-full object-cover hidden group-hover:block">
                 </div>
 
                 <div class="p-6 flex-grow flex flex-col">
