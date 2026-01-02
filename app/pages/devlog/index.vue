@@ -13,7 +13,7 @@
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <NuxtLink v-for="project in projects" :key="project.name" :to="`/devlog/project/${project.name}`" class="block overflow-hidden bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
-        <img v-if="project.image" :src="project.image" :alt="project.name"/>
+        <img v-if="project.image":src="project.image" :alt="project.name"/>
         <div class="p-4 text-center font-bold">{{ project.name }}</div>
       </NuxtLink>
     </div>
@@ -40,7 +40,7 @@ const projects = computed(() => {
     if (post && !projectMap.has(post)) {
       projectMap.set(post, {
         name: post.meta.project,
-        image: post.meta.project_image || null
+        image: post.meta.project_image ? "/portfolioSite" + post.meta.project_image : null      
       });
     }
   });
