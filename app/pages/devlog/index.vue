@@ -11,10 +11,10 @@
       <pre>Posts (Daten): {{ page }}</pre>
     </div> -->
     
-    <div class="project-grid">
-      <NuxtLink v-for="project in projects" :key="project.name" :to="`/devlog/project/${project.name}`" class="project-card">
-        <img v-if="project.image" :src="project.image" :alt="project.name" class="project-image"/>
-        <div class="project-name">{{ project.name }}</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <NuxtLink v-for="project in projects" :key="project.name" :to="`/devlog/project/${project.name}`" class="block overflow-hidden bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
+        <img v-if="project.image" :src="project.image" :alt="project.name"/>
+        <div class="p-4 text-center font-bold">{{ project.name }}</div>
       </NuxtLink>
     </div>
   </div>
@@ -49,36 +49,5 @@ const projects = computed(() => {
 });
 </script>
 <style scoped>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
 
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
-  overflow: hidden;
-  display: block;
-  transition: transform 0.2s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.project-name {
-  padding: 1rem;
-  font-weight: bold;
-  text-align: center;
-}
 </style>
