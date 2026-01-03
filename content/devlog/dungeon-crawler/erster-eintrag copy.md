@@ -3,7 +3,7 @@ title: 'Mein erster Devlog-Eintrag!'
 description: 'Eine kurze Zusammenfassung, worum es in diesem Eintrag geht.'
 date: '2025-12-17'
 project: 'Crawler'
-project_image: '/images/games/crawler/placeholder.png' 
+project_image: '/games/dungeon-crawler/images/placeholder.png' 
 ---
 
 # Willkommen zu meinem Devlog

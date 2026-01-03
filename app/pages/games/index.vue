@@ -8,8 +8,8 @@
             <!-- Karte 1: Dungeon Crawler -->
             <div class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20">
                 <div class="w-full h-48 overflow-hidden">
-                    <img src="/images/games/crawler/placeholder.png" alt="Dungeon Crawler Standbild" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
-                    <img src="/images/games/crawler/placeholder.gif" alt="Dungeon Crawler Animation" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
+                    <img src="/games/dungeon-crawler/images/placeholder.png" alt="Dungeon Crawler Standbild" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
+                    <img src="/games/dungeon-crawler/videos/placeholder.gif" alt="Dungeon Crawler Animation" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
                 </div>
                 
                 <NuxtLink to="/games/dungeon-crawler" class="p-6 flex-grow flex flex-col">
@@ -27,8 +27,8 @@
             <!-- Karte 2: Space Trader -->
             <div class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-rose-500/20">
                 <div class="w-full h-48 overflow-hidden">
-                    <img src="/images/games/dungeon/placeholder.png" alt="Space Trader Standbild" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
-                    <img src="/images/games/dungeon/placeholder.gif" alt="Space Trader Animation" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
+                    <img src="/games/space-trader/images/placeholder.png" alt="Space Trader Standbild" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
+                    <img src="/games/space-trader/videos/placeholder.gif" alt="Space Trader Animation" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
                 </div>
 
                 <NuxtLink to="/games/space-trader" class="p-6 flex-grow flex flex-col">
