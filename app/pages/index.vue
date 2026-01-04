@@ -95,6 +95,7 @@
   </div>
 </section>
 
+
  <!-- Ersetze die komplette <section id="devlog"> in app/pages/index.vue -->
 <section id="devlog" class="content-section">
   <h2 class="text-3xl font-bold text-center mb-10">Aktuelle Devlog-Einträge</h2>
@@ -102,7 +103,7 @@
   <div class="space-y-6 max-w-3xl mx-auto">
 
     <!-- Devlog Eintrag 1 -->
-    <NuxtLink to="/devlog/1" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
+    <NuxtLink to="/devlog" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
         <span class="text-sm font-medium text-slate-400 mb-1 sm:mb-0">15. Dezember 2025</span>
         <h4 class="text-lg font-semibold text-white">Dungeon Crawler: Neues Partikelsystem</h4>
@@ -111,7 +112,7 @@
     </NuxtLink>
 
     <!-- Devlog Eintrag 2 -->
-    <NuxtLink to="/devlog/2" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
+    <NuxtLink to="/devlog" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
         <span class="text-sm font-medium text-slate-400 mb-1 sm:mb-0">10. Dezember 2025</span>
         <h4 class="text-lg font-semibold text-white">Space Trader: Handelsrouten-UI</h4>
@@ -120,7 +121,7 @@
     </NuxtLink>
 
     <!-- Devlog Eintrag 3 -->
-    <NuxtLink to="/devlog/3" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
+    <NuxtLink to="/devlog" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
         <span class="text-sm font-medium text-slate-400 mb-1 sm:mb-0">01. Dezember 2025</span>
         <h4 class="text-lg font-semibold text-white">Projektstart "Dungeon Crawler"</h4>
