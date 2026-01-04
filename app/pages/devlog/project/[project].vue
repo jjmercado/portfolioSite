@@ -6,8 +6,8 @@
     </p>
     
     <ul>
-      <li v-for="post in posts" :key="post._path">
-        <NuxtLink :to="post._path">
+      <li v-for="post in posts" :key="post.path">
+        <NuxtLink :to="post.path">
           <h2>{{ post.title }}</h2>
           <p>{{ post.description }}</p>
           <small>{{ new Date(post.date).toLocaleDateString() }}</small>
@@ -19,14 +19,17 @@
 
 <script setup>
 const route = useRoute();
-const project = route.params.project;
+const project = route.params.project
+
+// Konvertiert 'dungeon-crawler' zu 'dungeonCrawler'
+const projectNameAsCamelCase = computed(() => {
+  if (!project) return '';
+  return project.replace(/-(\w)/g, (_, c) => c.toUpperCase());
+});
 
 // Lade nur die Posts für das ausgewählte Projekt
-const { data: posts } = await useAsyncData(`devlog-posts-${project}`, () => 
-  queryContent('/devlog')
-    .where({ project: { $eq: project } })
-    .sort({ date: -1 })
-    .find()
+const { data: posts } = await useAsyncData(route.path, () => 
+  queryCollection(projectNameAsCamelCase.value).all()
 );
 </script>
 
