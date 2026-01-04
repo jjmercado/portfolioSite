@@ -2,7 +2,7 @@
   <main class="container mx-auto px-4 py-8">
     <!-- Überprüfen, ob 'data' geladen wurde -->
     <div v-if="data">
-      <article class="prose lg:prose-xl mx-auto">
+      <article class="mx-auto max-w-4xl">
         <!-- Titel des Spiels -->
         <h1 class="text-4xl font-bold mb-4 text-center">{{ data.title }}</h1>
 
@@ -13,8 +13,8 @@
         </div>
 
         <!-- Beschreibung des Spiels -->
-        <div class="content-section my-8">
-          <h2 class="text-2xl font-semibold mb-2">Über das Spiel</h2>
+        <div class="content-section my-8 prose lg:prose-xl mx-auto">
+          <h2 class="text-2xl font-semibold mb-2 text-center">Über das Spiel</h2>
           <ContentRenderer :value="data" />
         </div>
         
