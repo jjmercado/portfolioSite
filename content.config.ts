@@ -14,8 +14,6 @@ export default defineContentConfig({
       // Load every file inside the `content` directory
       source: 'devlog/dungeon-crawler/*.md',      
       schema: z.object({
-        //tags: z.array(z.string()),
-        //image: z.string(),
         date: z.date()
       })
     }),
@@ -23,7 +21,10 @@ export default defineContentConfig({
       // Specify the type of content in this collection
       type: 'page',
       // Load every file inside the `content` directory
-      source: 'devlog/space-trader/*.md'
+      source: 'devlog/space-trader/*.md',
+      schema: z.object({
+        date: z.date()
+      })
     }),
     games: defineCollection({
       // Specify the type of content in this collection
