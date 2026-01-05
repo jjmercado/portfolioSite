@@ -1,7 +1,7 @@
 ---
 title: 'Mein erster Devlog-Eintrag! dung'
 description: 'Eine kurze Zusammenfassung, worum es in diesem Eintrag geht.'
-date: '2025-12-17'
+date: '2025-12-18'
 project: 'dungeon-crawler'
 project_image: '/games/dungeon-crawler/images/placeholder.png' 
 ---

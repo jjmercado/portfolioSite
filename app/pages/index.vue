@@ -96,41 +96,37 @@
 </section>
 
 
- <!-- Ersetze die komplette <section id="devlog"> in app/pages/index.vue -->
-<section id="devlog" class="content-section">
-  <h2 class="text-3xl font-bold text-center mb-10">Aktuelle Devlog-Einträge</h2>
-  
-  <div class="space-y-6 max-w-3xl mx-auto">
+    <section id="latest-devlogs" class="content-section py-12">
+      <div class="container mx-auto px-4 max-w-4xl"> <!-- max-w-4xl für eine angenehme Breite -->
+        <h2 class="text-3xl font-bold text-center mb-10">Neueste Devlog-Einträge</h2>
+        
+        <!-- Container für die untereinander angeordneten Einträge -->
+        <div class="space-y-6"> <!-- space-y-6 fügt Abstand zwischen den Elementen hinzu -->
 
-    <!-- Devlog Eintrag 1 -->
-    <NuxtLink to="/devlog" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
-      <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
-        <span class="text-sm font-medium text-slate-400 mb-1 sm:mb-0">15. Dezember 2025</span>
-        <h4 class="text-lg font-semibold text-white">Dungeon Crawler: Neues Partikelsystem</h4>
+          <!-- Fallback-Nachricht, wenn keine Einträge geladen werden -->
+          <p v-if="!latestPosts || latestPosts.length === 0">Keine Devlog-Einträge gefunden.</p>
+
+          <!-- Schleife, die für jeden Eintrag eine Karte generiert -->
+          <NuxtLink v-else v-for="post in latestPosts" :key="post.path" :to="post.path"
+                 class="block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
+            
+            <div class="flex justify-between items-baseline">
+                <h3 class="text-xl font-bold text-white">{{ post.title }}</h3>
+                <p class="text-slate-400 text-sm">
+                    {{ new Date(post.meta.date).toLocaleDateString() }}
+                </p>
+            </div>
+            <p class="text-slate-300 mt-2">{{ post.description }}</p>
+          </NuxtLink>
+
+        </div>
+        <div class="text-center mt-12">
+            <NuxtLink to="/devlog" class="text-purple-400 hover:text-purple-300 font-bold">
+                Alle Devlogs ansehen &rarr;
+            </NuxtLink>
+        </div>
       </div>
-      <p class="mt-2 text-slate-300">Ich habe das Magie-System überarbeitet und neue Partikeleffekte für Feuer- und Eiszauber hinzugefügt. Das Feedback fühlt sich jetzt viel wuchtiger an!</p>
-    </NuxtLink>
-
-    <!-- Devlog Eintrag 2 -->
-    <NuxtLink to="/devlog" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
-      <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
-        <span class="text-sm font-medium text-slate-400 mb-1 sm:mb-0">10. Dezember 2025</span>
-        <h4 class="text-lg font-semibold text-white">Space Trader: Handelsrouten-UI</h4>
-      </div>
-      <p class="mt-2 text-slate-300">Das neue UI-Panel zur Visualisierung von Handelsrouten ist fertig. Spieler können jetzt die profitabelsten Routen auf der Sternenkarte sehen.</p>
-    </NuxtLink>
-
-    <!-- Devlog Eintrag 3 -->
-    <NuxtLink to="/devlog" class="block p-6 bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
-      <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
-        <span class="text-sm font-medium text-slate-400 mb-1 sm:mb-0">01. Dezember 2025</span>
-        <h4 class="text-lg font-semibold text-white">Projektstart "Dungeon Crawler"</h4>
-      </div>
-      <p class="mt-2 text-slate-300">Der erste Prototyp steht! Die Spielerfigur kann sich in einem zufällig generierten Level bewegen. Die nächsten Schritte sind Gegner und ein Kampfsystem.</p>
-    </NuxtLink>
-
-  </div>
-</section>
+    </section>
 
 <!-- Ersetze die komplette <section id="contact"> -->
 <section id="contact" class="py-20 sm:py-28 text-center">
@@ -149,19 +145,28 @@
   </div>
 </template>
 
-<style>
-/* Füge diese neuen Stile am Ende deines <style>-Blocks in pages/index.vue hinzu */
-.project-card-link, .devlog-link {
-  text-decoration: none;
-  color: inherit;
-  display: block; /* Wichtig, damit der Link den ganzen Bereich einnimmt */
+<script setup>
+  // Holen Sie sich die 3 neuesten Devlog-Einträge aus einem bestimmten Projekt
+  // ÄNDERN SIE HIER 'dungeon-crawler' zum gewünschten Projekt-Slug
+  const projectName = 'dungeonCrawler';
+
+  const { data: latestPosts } = await useAsyncData(`latest-posts-${projectName}`, () => 
+    queryCollection(projectName) // 1. Ziel: /content/devlog/dungeon-crawler          // 2. Sortierung: Neueste zuerst                     // 3. Limit: Nur 3 Einträge
+      .limit(3)
+      .all()
+  );
+</script>
+
+<style scoped>
+.content-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* Die alten Stile bleiben unverändert */
-/* ... (Rest deines CSS) ... */
-.hero-section {
-  text-align: center;
-  padding: 6rem 0;
+@media (min-width: 768px) {
+  .content-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
-/* ... usw. ... */
 </style>

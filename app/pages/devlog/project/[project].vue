@@ -10,7 +10,7 @@
         <NuxtLink :to="post.path">
           <h2>{{ post.title }}</h2>
           <p>{{ post.description }}</p>
-          <small>{{ new Date(post.date).toLocaleDateString() }}</small>
+          <small>{{ new Date(post.meta.date).toLocaleDateString() }}</small>
         </NuxtLink>
       </li>
     </ul>
