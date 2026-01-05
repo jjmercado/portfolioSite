@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <h1>Devlogs</h1>
-    <p>Wähle ein Projekt aus, um die dazugehörigen Devlogs zu sehen.</p>
+  <div class="container mx-auto px-4 max-w-4xl">
+  <div class="py-16 sm:py-20 text-center">
+    <h1 class="text-4xl font-bold mb-10">Devlogs</h1>
+    <p class="mt-6 text-lg leading-8 text-slate-300 m-4">
+      Wähle ein Projekt aus, um die dazugehörigen Devlogs zu sehen.
+    </p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <NuxtLink v-for="project in projects" :key="project.slug" :to="`/devlog/project/${project.slug}`" class="block overflow-hidden bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
@@ -9,6 +12,7 @@
         <div class="p-4 text-center font-bold capitalize">{{ project.displayName }}</div>
       </NuxtLink>
     </div>
+  </div>
   </div>
 </template>
 

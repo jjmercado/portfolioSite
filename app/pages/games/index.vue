@@ -1,6 +1,7 @@
 <template>
-  <section id="games" class="content-section">
-    <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
+  <section id="games" class="py-16 sm:py-20">
+    <div class="container mx-auto px-4 max-w-4xl">
+    <h2 class="text-4xl font-bold text-center mb-10">Meine Spiele</h2>
     
     <!-- Grid-Container für die dynamisch geladenen Karten -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -30,7 +31,7 @@
           </div>
         </NuxtLink>
       </div>
-
+      </div>
     </div>
   </section>
 </template>

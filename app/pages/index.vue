@@ -22,8 +22,9 @@
 
 <!-- Ersetze die komplette <section id="about"> -->
 <section id="about" class="py-20">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 items-center">
-    
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 items-center">
+      
     <!-- Bild-Spalte -->
     <div class="flex justify-center lg:justify-start">
       <div class="w-64 h-64 rounded-full bg-gray-800 ring-4 ring-purple-500/50 flex items-center justify-center">
@@ -42,13 +43,14 @@
         Mein Fokus liegt auf <span class="font-semibold text-purple-400">Gameplay-Mechaniken</span> und <span class="font-semibold text-purple-400">prozeduraler Generierung</span>, um dynamische und wieder spielbare Welten zu erschaffen.
       </p>
     </div>
-
+    </div>
   </div>
 </section>
 
 <!-- Ersetze die komplette <section id="games"> in app/pages/index.vue -->
 
-<section id="games" class="content-section pt-24">
+<section id="games" class="content-section">
+  <div class="container mx-auto px-4 max-w-4xl">
   <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
   
   <!-- Grid-Container für die Karten -->
@@ -93,40 +95,40 @@
     </NuxtLink>
 
   </div>
+  </div>
 </section>
 
+<section id="latest-devlogs" class="content-section pt-24">
+  <div class="container mx-auto px-4 max-w-4xl"> <!-- max-w-4xl für eine angenehme Breite -->
+    <h2 class="text-3xl font-bold text-center mb-10">Neueste Devlog-Einträge</h2>
+    
+    <!-- Container für die untereinander angeordneten Einträge -->
+    <div class="space-y-6"> <!-- space-y-6 fügt Abstand zwischen den Elementen hinzu -->
 
-    <section id="latest-devlogs" class="content-section pt-24">
-      <div class="container mx-auto px-4 max-w-4xl"> <!-- max-w-4xl für eine angenehme Breite -->
-        <h2 class="text-3xl font-bold text-center mb-10">Neueste Devlog-Einträge</h2>
+      <!-- Fallback-Nachricht, wenn keine Einträge geladen werden -->
+      <p v-if="!latestPosts || latestPosts.length === 0">Keine Devlog-Einträge gefunden.</p>
+
+      <!-- Schleife, die für jeden Eintrag eine Karte generiert -->
+      <NuxtLink v-else v-for="post in latestPosts" :key="post.path" :to="post.path"
+              class="block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
         
-        <!-- Container für die untereinander angeordneten Einträge -->
-        <div class="space-y-6"> <!-- space-y-6 fügt Abstand zwischen den Elementen hinzu -->
-
-          <!-- Fallback-Nachricht, wenn keine Einträge geladen werden -->
-          <p v-if="!latestPosts || latestPosts.length === 0">Keine Devlog-Einträge gefunden.</p>
-
-          <!-- Schleife, die für jeden Eintrag eine Karte generiert -->
-          <NuxtLink v-else v-for="post in latestPosts" :key="post.path" :to="post.path"
-                 class="block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
-            
-            <div class="flex justify-between items-baseline">
-                <h3 class="text-xl font-bold text-white">{{ post.title }}</h3>
-                <p class="text-slate-400 text-sm">
-                    {{ new Date(post.date).toLocaleDateString() }}
-                </p>
-            </div>
-            <p class="text-slate-300 mt-2">{{ post.description }}</p>
-          </NuxtLink>
-
+        <div class="flex justify-between items-baseline">
+            <h3 class="text-xl font-bold text-white">{{ post.title }}</h3>
+            <p class="text-slate-400 text-sm">
+                {{ new Date(post.date).toLocaleDateString() }}
+            </p>
         </div>
+        <p class="text-slate-300 mt-2">{{ post.description }}</p>
+      </NuxtLink>
+
+    </div>
     <div class="mt-10 text-center">
       <NuxtLink to="/games" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
         Alle DevLogs ansehen &rarr;
       </NuxtLink>
     </div>
-      </div>
-    </section>
+  </div>
+</section>
 
 <!-- Ersetze die komplette <section id="contact"> -->
 <section id="contact" class="py-20 sm:py-24 text-center">

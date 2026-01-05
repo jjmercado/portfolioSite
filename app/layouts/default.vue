@@ -1,25 +1,44 @@
 <template>
   <div class="relative isolate min-h-screen">
     <!-- Globaler Hintergrund-Glow -->
-    <div aria-hidden="true" class="absolute inset-0 -z-10">
-      <!-- Dieser Div erzeugt jetzt einen Verlauf über die ganze Breite -->
-      <div class="absolute inset-x-0 top-0 h-[50rem] bg-gradient-to-b from-purple-900/20 to-transparent"></div>
-    </div>
+       <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
+      <nav class="container mx-auto px-4 lg:px-8 flex items-center justify-between h-20">
+        <!-- Logo -->
+        <NuxtLink to="/" class="text-2xl font-bold text-purple-400">
+          Jeremy
+        </NuxtLink>
 
-    <!-- Dein eigentlicher Seiteninhalt -->
-    <div class="portfolio-container">
-      <!-- 1. Header / Navigation -->
-      <header class="main-header">
-        <div class="logo">
-          <NuxtLink to="/">Jeremy's Devlog</NuxtLink>
+        <!-- Desktop Navigation (sichtbar ab 'md' Breakpoint) -->
+        <div class="hidden md:flex items-center space-x-8">
+          <NuxtLink to="/" class="hover:text-purple-400 transition-colors">Home</NuxtLink>
+          <NuxtLink to="/games" class="hover:text-purple-400 transition-colors">Spiele</NuxtLink>
+          <NuxtLink to="/devlog" class="hover:text-purple-400 transition-colors">Devlogs</NuxtLink>
         </div>
-        <nav>
-          <NuxtLink to="/games">Spiele</NuxtLink>
-          <a href="#about">Über mich</a>
-          <NuxtLink to="/devlog">Devlog</NuxtLink>
-          <a href="#contact">Kontakt</a>
-        </nav>
-      </header>
+
+        <!-- Burger Menu Button (nur sichtbar auf kleinen Bildschirmen) -->
+        <div class="md:hidden">
+          <button @click="isMobileMenuOpen = !isMobileMenuOpen" aria-label="Menü öffnen">
+            <!-- Burger Icon -->
+            <svg v-if="!isMobileMenuOpen" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+            </svg>
+            <!-- Close (X) Icon -->
+            <svg v-else class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu (Dropdown) -->
+      <div v-if="isMobileMenuOpen" class="md:hidden bg-slate-800">
+        <div class="flex flex-col items-center space-y-4 py-6">
+          <NuxtLink to="/" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Home</NuxtLink>
+          <NuxtLink to="/games" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Spiele</NuxtLink>
+          <NuxtLink to="/devlog" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Devlogs</NuxtLink>
+        </div>
+      </div>
+    </header>
 
       <!-- HIER WIRD DER SEITENINHALT EINGEFÜGT -->
       <main>
@@ -36,8 +55,14 @@
         <p>&copy; 2025 Jeremy. Alle Rechte vorbehalten.</p>
       </footer>
     </div>
-  </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+
+// Reaktiver Zustand zur Steuerung des mobilen Menüs
+const isMobileMenuOpen = ref(false);
+</script>
 
 <style>
 /* Globale Stile & Layout-Stile (bleiben größtenteils gleich) */
@@ -99,5 +124,10 @@ nav a, .social-links a {
 }
 nav a:hover, .social-links a:hover {
   color: var(--primary-color);
+}
+
+/* Stile für den aktiven Link */
+.router-link-exact-active {
+  color: #c084fc; /* purple-400 */
 }
 </style>

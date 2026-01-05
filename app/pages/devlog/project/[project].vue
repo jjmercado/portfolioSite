@@ -1,19 +1,18 @@
 <template>
-  <div>
-    <h1>Devlogs für: {{ project }}</h1>
-    <p>
-      <NuxtLink to="/devlog">Zurück zur Projektübersicht</NuxtLink>
-    </p>
-    
+  <div class="mx-auto max-w-2xl px-4">
+    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-4xl text-center py-6 sm:pt-6">
+      Devlogs für: {{ project }}
+    </h1>   
     <ul>
       <li v-for="post in posts" :key="post.path">
-        <NuxtLink :to="post.path">
+        <NuxtLink :to="post.path" class="m-4 block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
           <h2>{{ post.title }}</h2>
           <p>{{ post.description }}</p>
-          <small>{{ new Date(post.meta.date).toLocaleDateString() }}</small>
+          <small>{{ new Date(post.date).toLocaleDateString() }}</small>
         </NuxtLink>
       </li>
     </ul>
+    <NuxtLink :to="'/devlog'" class="block w-fit mx-auto mt-12 rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Zurück zu den Einträgen von {{ route.params.project }} &rarr;</NuxtLink>
   </div>
 </template>
 
@@ -37,17 +36,5 @@ const { data: posts } = await useAsyncData(route.path, () =>
 ul {
   list-style: none;
   padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-a:hover {
-  background-color: #f0f0f0;
 }
 </style>
