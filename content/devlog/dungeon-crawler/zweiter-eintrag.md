@@ -1,7 +1,7 @@
 ---
 title: 'Mein zweiter'
 description: 'Eine kurze Zusammenfassung, worum es in diesem Eintrag geht.'
-date: '2025-12-28'
+date: '2025-12-19'
 project: 'dungeon-crawler'
 project_image: '/games/dungeon-crawler/images/placeholder.png' 
 ---

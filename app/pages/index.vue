@@ -113,7 +113,7 @@
             <div class="flex justify-between items-baseline">
                 <h3 class="text-xl font-bold text-white">{{ post.title }}</h3>
                 <p class="text-slate-400 text-sm">
-                    {{ new Date(post.meta.date).toLocaleDateString() }}
+                    {{ new Date(post.date).toLocaleDateString() }}
                 </p>
             </div>
             <p class="text-slate-300 mt-2">{{ post.description }}</p>
@@ -151,7 +151,8 @@
   const projectName = 'dungeonCrawler';
 
   const { data: latestPosts } = await useAsyncData(`latest-posts-${projectName}`, () => 
-    queryCollection(projectName) // 1. Ziel: /content/devlog/dungeon-crawler          // 2. Sortierung: Neueste zuerst                     // 3. Limit: Nur 3 Einträge
+    queryCollection(projectName)
+      .order('date', 'DESC')
       .limit(3)
       .all()
   );
