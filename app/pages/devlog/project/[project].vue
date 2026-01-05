@@ -1,11 +1,14 @@
 <template>
   <div class="mx-auto max-w-2xl px-4">
-    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-4xl text-center py-6 sm:pt-6">
+    <h1 class="text-2xl font-bold tracking-tight text-white sm:text-4xl text-center py-4 sm:pt-6">
       Devlogs für: {{ project }}
     </h1>   
     <ul>
       <li v-for="post in posts" :key="post.path">
-        <NuxtLink :to="post.path" class="m-4 block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
+        <NuxtLink :to="post.path" 
+            class="m-4 block bg-gray-900/50 p-6 rounded-lg transition-all duration-300 hover:bg-gray-900
+         ring-1 ring-purple-500 
+         md:ring-white/10 md:hover:ring-purple-500">
           <h2>{{ post.title }}</h2>
           <p>{{ post.description }}</p>
           <small>{{ new Date(post.date).toLocaleDateString() }}</small>

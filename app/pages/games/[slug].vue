@@ -9,7 +9,7 @@
         <!-- Video oder GIF -->
         <div class="video-container my-8">
           <video v-if="data.meta.video" :src="data.meta.video" autoplay loop muted playsinline class="w-full rounded-lg shadow-lg"></video>
-          <img v-else-if="data.meta.gif" :src="data.meta.gif" alt="Gameplay GIF" class="w-full rounded-lg shadow-lg" />
+          <img v-else-if="'/portfolioSite' + data.meta.gif" :src="'/portfolioSite' + data.meta.gif" alt="Gameplay GIF" class="w-full rounded-lg shadow-lg" />
         </div>
 
         <!-- Beschreibung des Spiels -->
