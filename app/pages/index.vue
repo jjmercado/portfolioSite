@@ -2,7 +2,7 @@
   <div> <!-- Die <NuxtLayout> Hülle ist jetzt in app.vue, also brauchen wir sie hier nicht mehr -->
 <!-- Ersetze die komplette <section id="hero"> in app/pages/index.vue -->
 
-<section id="hero" class="text-center py-24 sm:py-32">  <!-- Hintergrund-Glow-Effekt -->
+<section id="hero" class="text-center py-24 sm:pt-24">  <!-- Hintergrund-Glow-Effekt -->
   <!-- Inhalt -->
   <div class="mx-auto max-w-2xl px-4">
     <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -13,7 +13,7 @@
       Von der ersten Codezeile bis zum fertigen Spiel – hier dokumentiere ich meine Reise und präsentiere meine Projekte.
     </p>
     <div class="mt-10">
-      <NuxtLink to="#games" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+      <NuxtLink to="/games" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
         Zu meinen Spielen
       </NuxtLink>
     </div>
@@ -21,7 +21,7 @@
 </section>
 
 <!-- Ersetze die komplette <section id="about"> -->
-<section id="about" class="py-20 sm:py-28">
+<section id="about" class="py-20">
   <div class="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 items-center">
     
     <!-- Bild-Spalte -->
@@ -48,7 +48,7 @@
 
 <!-- Ersetze die komplette <section id="games"> in app/pages/index.vue -->
 
-<section id="games" class="content-section">
+<section id="games" class="content-section pt-24">
   <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
   
   <!-- Grid-Container für die Karten -->
@@ -96,7 +96,7 @@
 </section>
 
 
-    <section id="latest-devlogs" class="content-section py-12">
+    <section id="latest-devlogs" class="content-section pt-24">
       <div class="container mx-auto px-4 max-w-4xl"> <!-- max-w-4xl für eine angenehme Breite -->
         <h2 class="text-3xl font-bold text-center mb-10">Neueste Devlog-Einträge</h2>
         
@@ -120,16 +120,16 @@
           </NuxtLink>
 
         </div>
-        <div class="text-center mt-12">
-            <NuxtLink to="/devlog" class="text-purple-400 hover:text-purple-300 font-bold">
-                Alle Devlogs ansehen &rarr;
-            </NuxtLink>
-        </div>
+    <div class="mt-10 text-center">
+      <NuxtLink to="/games" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+        Alle DevLogs ansehen &rarr;
+      </NuxtLink>
+    </div>
       </div>
     </section>
 
 <!-- Ersetze die komplette <section id="contact"> -->
-<section id="contact" class="py-20 sm:py-28 text-center">
+<section id="contact" class="py-20 sm:py-24 text-center">
   <div class="mx-auto max-w-2xl px-4">
     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Lass uns vernetzen!</h2>
     <p class="mt-6 text-lg leading-8 text-slate-300">
