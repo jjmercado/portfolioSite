@@ -1,48 +1,63 @@
 <template>
-    <section id="games" class="content-section">
-        <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
+  <section id="games" class="content-section">
+    <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
+    
+    <!-- Grid-Container für die dynamisch geladenen Karten -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Dynamische Schleife, die für jedes Spiel eine Karte generiert -->
+      <div v-for="game in games" :key="game.slug" 
+           class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20">
         
-        <!-- Grid-Container für die Karten -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <!-- Karte 1: Dungeon Crawler -->
-            <div class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20">
-                <div class="w-full h-48 overflow-hidden">
-                    <img src="/games/dungeon-crawler/images/placeholder.png" alt="Dungeon Crawler Standbild" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
-                    <img src="/games/dungeon-crawler/videos/placeholder.gif" alt="Dungeon Crawler Animation" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
-                </div>
-                
-                <NuxtLink to="/games/dungeon-crawler" class="p-6 flex-grow flex flex-col">
-                    <h3 class="text-xl font-bold text-white mb-2">Projekt "Dungeon Crawler"</h3>
-                    <p class="text-slate-400 text-base flex-grow mb-4">Ein prozedural generierter Dungeon Crawler, entwickelt mit Godot. Fokus auf schnelles Gameplay und Loot-Systeme.</p>
-                    
-                    <!-- Tags -->
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-cyan-400/10 text-cyan-400 text-xs font-medium px-2.5 py-1 rounded-full">Godot</span>
-                        <span class="bg-cyan-400/10 text-cyan-400 text-xs font-medium px-2.5 py-1 rounded-full">GDScript</span>
-                    </div>
-                </NuxtLink>
-            </div>
-
-            <!-- Karte 2: Space Trader -->
-            <div class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-rose-500/20">
-                <div class="w-full h-48 overflow-hidden">
-                    <img src="/games/space-trader/images/placeholder.png" alt="Space Trader Standbild" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
-                    <img src="/games/space-trader/videos/placeholder.gif" alt="Space Trader Animation" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
-                </div>
-
-                <NuxtLink to="/games/space-trader" class="p-6 flex-grow flex flex-col">
-                    <h3 class="text-xl font-bold text-white mb-2">Projekt "Space Trader"</h3>
-                    <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
-                    
-                    <!-- Tags -->
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-rose-400/10 text-rose-400 text-xs font-medium px-2.5 py-1 rounded-full">Unity</span>
-                        <span class="bg-rose-400/10 text-rose-400 text-xs font-medium px-2.5 py-1 rounded-full">C#</span>
-                    </div>
-                </NuxtLink>
-            </div>
-
+        <!-- Bild/Video-Container -->
+        <div class="w-full h-48 overflow-hidden">
+          <!-- Standbild (wird angezeigt, wenn nicht gehovert) -->
+          <img :src="game.image" :alt="`${game.title} Standbild`" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
+          <!-- Animiertes GIF (wird bei Hover angezeigt) -->
+          <img :src="game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
         </div>
-    </section>
+        
+        <!-- Inhalts-Container mit Link zur Detailseite -->
+        <NuxtLink :to="`/games/${game.slug}`" class="p-6 flex-grow flex flex-col">
+          <h3 class="text-xl font-bold text-white mb-2">{{ game.title }}</h3>
+          <p class="text-slate-400 text-base flex-grow mb-4">{{ game.description }}</p>
+          
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2">
+            <span v-for="tag in game.tags" :key="tag" class="bg-cyan-400/10 text-cyan-400 text-xs font-medium px-2.5 py-1 rounded-full">
+              {{ tag }}
+            </span>
+          </div>
+        </NuxtLink>
+      </div>
+
+    </div>
+  </section>
 </template>
+
+<script setup>
+import { computed } from 'vue';
+
+// Lade die Daten für alle Spiele aus dem 'games' Content-Verzeichnis
+const { data: gamesData } = await useAsyncData('games-list', () => 
+  queryCollection('games').all()
+);
+
+const games = computed(() => {
+  if (!gamesData.value) return [];
+  
+  // Verarbeite die Rohdaten in ein sauberes Format für das Template
+  return gamesData.value.map(game => ({
+    title: game.title,
+    description: game.description,
+    slug: game.path.split('/').pop(),
+    image: game.meta.image,
+    video: game.meta.gif, // Pfad zum GIF
+    tags: game.meta.tags || [] // Stellt sicher, dass tags immer ein Array ist
+  }));
+});
+</script>
+
+<style scoped>
+/* Hier sind keine zusätzlichen Stile nötig, da alles über Tailwind-Klassen gesteuert wird. */
+</style>
