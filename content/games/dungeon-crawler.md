@@ -7,8 +7,8 @@ gif: '/games/dungeon-crawler/videos/placeholder.gif'
 engine: 'Godot Engine'
 devtime: 'ca. 3 Monate'
 downloads:
-    windows: '/downloads/crawler_win.zip'
-    linux: '/downloads/SnakeApp.tar.gz'
+    windows: '/portfolioSite/downloads/crawler_win.zip'
+    linux: '/portfolioSite/downloads/SnakeApp.tar.gz'
 tags:
     - Godot
     - GDScript

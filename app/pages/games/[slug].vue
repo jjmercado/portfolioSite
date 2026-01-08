@@ -34,7 +34,7 @@
             <NuxtLink external v-if="data.meta.downloads.windows" :to="data.meta.downloads.windows" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Windows
             </NuxtLink>
-            <NuxtLink download v-if="data.meta.downloads.linux" :to="data.meta.downloads.linux" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <NuxtLink external v-if="data.meta.downloads.linux" :to="data.meta.downloads.linux" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
               Linux
             </NuxtLink>
           </div>
