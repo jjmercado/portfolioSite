@@ -8,7 +8,7 @@ engine: 'Godot Engine'
 devtime: 'ca. 3 Monate'
 downloads:
     windows: '/downloads/crawler_win.zip'
-    linux: '/downloads/SnakeApp'
+    linux: '/downloads/SnakeApp.tar.gz'
 tags:
     - Godot
     - GDScript
