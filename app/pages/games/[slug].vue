@@ -31,10 +31,10 @@
         <div class="download-section my-8 text-center">
           <h2 class="text-2xl font-semibold mb-4">Download</h2>
           <div class="flex justify-center gap-4">
-            <NuxtLink external v-if="data.meta.downloads.windows" :to="data.meta.downloads.windows" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <NuxtLink external download="" v-if="data.meta.downloads.windows" :to="data.meta.downloads.windows" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Windows
             </NuxtLink>
-            <NuxtLink external v-if="data.meta.downloads.linux" :to="data.meta.downloads.linux" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <NuxtLink external download="" v-if="data.meta.downloads.linux" :to="data.meta.downloads.linux" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
               Linux
             </NuxtLink>
           </div>
