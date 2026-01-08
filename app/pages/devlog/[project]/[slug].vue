@@ -13,9 +13,8 @@
       <!-- Titel des Devlog-Eintrags -->
       <h1 class="text-4xl font-bold mb-2">{{ posts.title }}</h1>
       <p class="text-gray-400 text-sm mb-8">
-        Veröffentlicht am: {{ new Date(posts.meta.date).toLocaleDateString() }}
-      </p>
-      
+        Veröffentlicht am: {{ new Date(posts.date).toLocaleDateString() }}
+      </p>      
       <!-- Hier wird der Markdown-Inhalt gerendert -->
       <ContentRenderer :value="posts" />
 

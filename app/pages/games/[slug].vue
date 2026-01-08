@@ -2,22 +2,24 @@
   <main class="container mx-auto px-4 py-8">
     <!-- Überprüfen, ob 'data' geladen wurde -->
     <div v-if="data">
+
+      <h1 class="text-4xl font-bold mb-4 text-center">{{ data.title }}</h1>
+      
+      <!-- Video oder GIF -->
+      <div class="video-container my-8">
+        <video v-if="data.meta.video" :src="data.meta.video" autoplay loop muted playsinline class="w-full rounded-lg shadow-lg"></video>
+        <NuxtImg v-else-if="data.meta.gif" :src="data.meta.gif" alt="Gameplay GIF" class="w-full rounded-lg shadow-lg" />
+      </div>
+      
+      <!-- Titel des Spiels -->
       <article class="mx-auto max-w-4xl">
-        <!-- Titel des Spiels -->
-        <h1 class="text-4xl font-bold mb-4 text-center">{{ data.title }}</h1>
-
-        <!-- Video oder GIF -->
-        <div class="video-container my-8">
-          <video v-if="data.meta.video" :src="data.meta.video" autoplay loop muted playsinline class="w-full rounded-lg shadow-lg"></video>
-          <img v-else-if="data.meta.gif" :src="data.meta.gif" alt="Gameplay GIF" class="w-full rounded-lg shadow-lg" />
-        </div>
-
         <!-- Beschreibung des Spiels -->
         <div class="content-section my-8 prose lg:prose-xl mx-auto">
           <h2 class="text-2xl font-semibold mb-2 text-center">Über das Spiel</h2>
           <ContentRenderer :value="data" />
         </div>
-        
+      </article>
+
         <!-- Technische Details -->
         <div class="tech-details my-8 p-4 border rounded-lg">
             <h3 class="text-xl font-semibold mb-2">Technische Details</h3>
@@ -41,8 +43,6 @@
         <NuxtLink to="/games" class="block w-fit mx-auto mt-12 rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
           Zurück zur Spieleübersicht
         </NuxtLink>
-
-      </article>
     </div>
 
     <!-- Dieser Block wird angezeigt, wenn KEIN Dokument gefunden wurde -->
