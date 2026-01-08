@@ -8,7 +8,7 @@
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <NuxtLink v-for="project in projects" :key="project.slug" :to="`/devlog/project/${project.slug}`" class="block overflow-hidden bg-gray-900/50 ring-1 ring-white/10 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:ring-purple-500">
-        <img v-if="project.image" :src="project.image" :alt="project.displayName" class="w-full h-48 object-cover"/>
+        <NuxtImg v-if="project.image" :src="project.image" :alt="project.displayName" class="w-full h-48 object-cover"/>
         <div class="p-4 text-center font-bold capitalize">{{ project.displayName }}</div>
       </NuxtLink>
     </div>
@@ -51,7 +51,7 @@ const projects = computed(() => {
         // Der Anzeigename, z.B. 'dungeon crawler'
         displayName: projectSlug.replace('-', ' '),
         // Nimm den Bildpfad aus dem Post-Objekt
-        image: post.meta.project_image ? '/portfolioSite' + post.meta.project_image : null 
+        image: post.meta.project_image ? post.meta.project_image : null 
       });
     }
   });

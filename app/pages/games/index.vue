@@ -13,9 +13,9 @@
         <!-- Bild/Video-Container -->
         <div class="w-full h-48 overflow-hidden">
           <!-- Standbild (wird angezeigt, wenn nicht gehovert) -->
-          <img :src="'/portfolioSite' + game.image" :alt="`${game.title} Standbild`" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden">
+          <NuxtImg :src="game.image" :alt="`${game.title} Standbild`" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden"/>
           <!-- Animiertes GIF (wird bei Hover angezeigt) -->
-          <img :src="'/portfolioSite' + game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block">
+          <NuxtImg :src="game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block"/>
         </div>
         
         <!-- Inhalts-Container mit Link zur Detailseite -->

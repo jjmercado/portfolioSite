@@ -2,10 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/content'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image'],
   app: {
     baseURL: '/portfolioSite/' // Ersetze 'dein-projektname' mit dem Namen deines GitHub-Repos!
   },

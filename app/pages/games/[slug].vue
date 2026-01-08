@@ -9,7 +9,7 @@
         <!-- Video oder GIF -->
         <div class="video-container my-8">
           <video v-if="data.meta.video" :src="data.meta.video" autoplay loop muted playsinline class="w-full rounded-lg shadow-lg"></video>
-          <img v-else-if="'/portfolioSite' + data.meta.gif" :src="'/portfolioSite' + data.meta.gif" alt="Gameplay GIF" class="w-full rounded-lg shadow-lg" />
+          <img v-else-if="data.meta.gif" :src="data.meta.gif" alt="Gameplay GIF" class="w-full rounded-lg shadow-lg" />
         </div>
 
         <!-- Beschreibung des Spiels -->
@@ -29,12 +29,12 @@
         <div class="download-section my-8 text-center">
           <h2 class="text-2xl font-semibold mb-4">Download</h2>
           <div class="flex justify-center gap-4">
-            <a v-if="data.meta.downloads && data.meta.downloads.windows" :href="'/portfolioSite' + data.meta.downloads.windows" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <NuxtLink v-if="data.meta.downloads && data.meta.downloads.windows" :href="data.meta.downloads.windows" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Windows
-            </a>
-            <a v-if="data.meta.downloads && data.meta.downloads.linux" :href="'/portfolioSite' + data.meta.downloads.linux" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            </NuxtLink>
+            <NuxtLink v-if="data.meta.downloads && data.meta.downloads.linux" :href="data.meta.downloads.linux" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
               Linux
-            </a>
+            </NuxtLink>
           </div>
         </div>
         
