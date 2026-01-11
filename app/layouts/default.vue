@@ -11,6 +11,7 @@
         <!-- Desktop Navigation (sichtbar ab 'md' Breakpoint) -->
         <div class="hidden md:flex items-center space-x-8">
           <NuxtLink to="/" class="hover:text-purple-400 transition-colors">Home</NuxtLink>
+          <NuxtLink to="/about" class="hover:text-purple-400 transition-colors">About</NuxtLink>
           <NuxtLink to="/games" class="hover:text-purple-400 transition-colors">Spiele</NuxtLink>
           <NuxtLink to="/devlog" class="hover:text-purple-400 transition-colors">Devlogs</NuxtLink>
         </div>
@@ -34,6 +35,7 @@
       <div v-if="isMobileMenuOpen" class="md:hidden bg-slate-800">
         <div class="flex flex-col items-center space-y-4 py-6">
           <NuxtLink to="/" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Home</NuxtLink>
+          <NuxtLink to="/about" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">About</NuxtLink>
           <NuxtLink to="/games" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Spiele</NuxtLink>
           <NuxtLink to="/devlog" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Devlogs</NuxtLink>
         </div>
