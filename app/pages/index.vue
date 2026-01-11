@@ -61,50 +61,156 @@
 
 <section id="games" class="content-section">
   <div class="container mx-auto px-4 max-w-4xl">
-  <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
+    <h2 class="text-3xl font-bold text-center mb-10">Meine Spiele</h2>
   
-  <!-- Grid-Container für die Karten -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Grid-Container für die Karten -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <!-- Karte 1: Dungeon Crawler -->
-    <NuxtLink to="/games/dungeon-crawler" class="group block">
-      <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-cyan-500/20">
-        <!-- Optional: Bild hier einfügen -->
-        <!-- <img src="/path/to/dungeon-crawler.jpg" alt="Dungeon Crawler" class="w-full h-48 object-cover"> -->
-        
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-bold text-white mb-2">Projekt "Dungeon Crawler"</h3>
-          <p class="text-slate-400 text-base flex-grow mb-4">Ein prozedural generierter Dungeon Crawler, entwickelt mit Godot. Fokus auf schnelles Gameplay und Loot-Systeme.</p>
+      <!-- Karte 1: Dungeon Crawler -->
+      <NuxtLink to="/games/dungeon-crawler" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/dungeon-crawler.jpg" alt="Dungeon Crawler" class="w-full h-48 object-cover"> -->
           
-          <!-- Tags -->
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Snake Klon"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Ein prozedural generierter Dungeon Crawler, entwickelt mit Godot. Fokus auf schnelles Gameplay und Loot-Systeme.</p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-400/10 text-blue-400 text-xs font-medium px-2.5 py-1 rounded-full">C++</span>
+              <span class="bg-green-400/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">SFML</span>
+            </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <!-- Karte 2: Space Trader -->
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Pac-Man Klon"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-400/10 text-blue-400 text-xs font-medium px-2.5 py-1 rounded-full">C++</span>
+              <span class="bg-green-400/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">SFML</span>
+            </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Asteroids Klon"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-400/10 text-blue-400 text-xs font-medium px-2.5 py-1 rounded-full">C++</span>
+              <span class="bg-green-400/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">SFML</span>
+            </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Pong Klon"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-400/10 text-blue-400 text-xs font-medium px-2.5 py-1 rounded-full">C++</span>
+              <span class="bg-green-400/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">SFML</span>
+            </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Pac-Man Klon"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-400/10 text-gray-400 text-xs font-medium px-2.5 py-1 rounded-full">Unity</span>
+              <span class="bg-purple-400/10 text-purple-400 text-xs font-medium px-2.5 py-1 rounded-full">C#</span>
+            </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Snake Klon"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-400/10 text-gray-400 text-xs font-medium px-2.5 py-1 rounded-full">Unity</span>
+              <span class="bg-purple-400/10 text-purple-400 text-xs font-medium px-2.5 py-1 rounded-full">C#</span>
+            </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-purple-500/20">          <!-- Optional: Bild hier einfügen -->
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Tiny Swords"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-400/10 text-gray-400 text-xs font-medium px-2.5 py-1 rounded-full">Unity</span>
+            <span class="bg-purple-400/10 text-purple-400 text-xs font-medium px-2.5 py-1 rounded-full">C#</span>
+          </div>
+          </div>
+        </div>
+      </NuxtLink>
+
+      <NuxtLink to="/games/space-trader" class="group block">
+        <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-cyan-500/20">
+          <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
+
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold text-white mb-2">Projekt "Poly Slayer"</h3>
+            <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
+            
+            <!-- Tags -->
           <div class="flex flex-wrap gap-2">
             <span class="bg-cyan-400/10 text-cyan-400 text-xs font-medium px-2.5 py-1 rounded-full">Godot</span>
             <span class="bg-cyan-400/10 text-cyan-400 text-xs font-medium px-2.5 py-1 rounded-full">GDScript</span>
           </div>
-        </div>
-      </div>
-    </NuxtLink>
-
-    <!-- Karte 2: Space Trader -->
-    <NuxtLink to="/games/space-trader" class="group block">
-      <div class="bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-rose-500/20">
-        <!-- Optional: Bild hier einfügen -->
-        <!-- <img src="/path/to/space-trader.png" alt="Space Trader" class="w-full h-48 object-cover"> -->
-
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-bold text-white mb-2">Projekt "Space Trader"</h3>
-          <p class="text-slate-400 text-base flex-grow mb-4">Eine 2D-Weltraum-Handelssimulation mit einer dynamischen Wirtschaft. Entwickelt in Unity.</p>
-          
-          <!-- Tags -->
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-rose-400/10 text-rose-400 text-xs font-medium px-2.5 py-1 rounded-full">Unity</span>
-            <span class="bg-rose-400/10 text-rose-400 text-xs font-medium px-2.5 py-1 rounded-full">C#</span>
           </div>
         </div>
-      </div>
-    </NuxtLink>
+      </NuxtLink>
 
-  </div>
+    </div>
   </div>
 </section>
 
