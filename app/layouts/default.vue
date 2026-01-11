@@ -5,10 +5,9 @@
       <nav class="container mx-auto px-4 lg:px-8 flex items-center justify-between h-20">
         <!-- Logo -->
         <NuxtLink to="/" class="text-2xl font-bold text-purple-400">
-          Jeremy
+          <NuxtImg src="icon_anvil.png" alt="icon" class="w-full rounded-lg shadow-lg" />
         </NuxtLink>
 
-        <!-- Desktop Navigation (sichtbar ab 'md' Breakpoint) -->
         <div class="hidden md:flex items-center space-x-8">
           <NuxtLink to="/" class="hover:text-purple-400 transition-colors">Home</NuxtLink>
           <NuxtLink to="/about" class="hover:text-purple-400 transition-colors">About</NuxtLink>
@@ -16,7 +15,6 @@
           <NuxtLink to="/devlog" class="hover:text-purple-400 transition-colors">Devlogs</NuxtLink>
         </div>
 
-        <!-- Burger Menu Button (nur sichtbar auf kleinen Bildschirmen) -->
         <div class="md:hidden">
           <button @click="isMobileMenuOpen = !isMobileMenuOpen" aria-label="Menü öffnen">
             <!-- Burger Icon -->
@@ -31,7 +29,6 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu (Dropdown) -->
       <div v-if="isMobileMenuOpen" class="md:hidden bg-slate-800">
         <div class="flex flex-col items-center space-y-4 py-6">
           <NuxtLink to="/" @click="isMobileMenuOpen = false" class="text-lg hover:text-purple-400">Home</NuxtLink>
@@ -41,8 +38,6 @@
         </div>
       </div>
     </header>
-
-      <!-- HIER WIRD DER SEITENINHALT EINGEFÜGT -->
       <main>
         <slot />
       </main>
@@ -54,7 +49,7 @@
           <a href="https://ihr-profil.itch.io/" target="_blank">itch.io</a>
           <a href="https://linkedin.com/in/ihr-profil" target="_blank">LinkedIn</a>
         </div>
-        <p>&copy; 2025 Jeremy. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2026 Astral Anvil Studios. Alle Rechte vorbehalten.</p>
       </footer>
     </div>
 </template>
@@ -62,19 +57,16 @@
 <script setup>
 import { ref } from 'vue';
 
-// Reaktiver Zustand zur Steuerung des mobilen Menüs
 const isMobileMenuOpen = ref(false);
 </script>
 
 <style>
-/* Globale Stile & Layout-Stile (bleiben größtenteils gleich) */
-/* Ersetze den :root Block in app/layouts/default.vue */
 :root {
-  --bg-color: #0a0a0a; /* Fast reines Schwarz */
-  --primary-color: #e2e8f0; /* Helles Grau für Text */
-  --secondary-color: #94a3b8; /* Gedämpftes Grau für Untertexte */
-  --accent-color: #a855f7; /* Ein kräftiges Lila (Purple-500 von Tailwind) */
-  --card-bg: #1e293b; /* Ein dunkles Blau-Grau für Kartenhintergründe */
+  --bg-color: #0a0a0a;
+  --primary-color: #e2e8f0;
+  --secondary-color: #94a3b8;
+  --accent-color: #a855f7;
+  --card-bg: #1e293b;
 }
 
 body {
@@ -92,7 +84,6 @@ body {
   padding: 0 2rem;
 }
 
-/* Header & Footer */
 .main-header, .main-footer {
   display: flex;
   justify-content: space-between;
@@ -110,11 +101,10 @@ body {
   color: var(--secondary-color);
 }
 
-/* Ändere diese Regel in app/layouts/default.vue */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--accent-color); /* <-- Diese Zeile wurde hinzugefügt/geändert */
+  color: var(--accent-color);
 }
 
 nav a, .social-links a {
@@ -128,8 +118,7 @@ nav a:hover, .social-links a:hover {
   color: var(--primary-color);
 }
 
-/* Stile für den aktiven Link */
 .router-link-exact-active {
-  color: #c084fc; /* purple-400 */
+  color: #c084fc;
 }
 </style>

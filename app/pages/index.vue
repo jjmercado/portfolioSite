@@ -34,16 +34,26 @@
     </div>
 
     <!-- Text-Spalte -->
-    <div>
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Über mich</h2>
-      <p class="mt-6 text-lg leading-8 text-slate-300">
-        Hallo! Ich bin Jeremy. Seit meiner Kindheit bin ich von Videospielen fasziniert. Diese Faszination hat mich dazu bewogen, nicht nur zu spielen, sondern selbst kreativ zu werden und einzigartige Spielerlebnisse zu schaffen, die in Erinnerung bleiben.
-      </p>
-      <p class="mt-4 text-lg leading-8 text-slate-300">
-        Mein Fokus liegt auf <span class="font-semibold text-purple-400">Gameplay-Mechaniken</span> und <span class="font-semibold text-purple-400">prozeduraler Generierung</span>, um dynamische und wieder spielbare Welten zu erschaffen.
-      </p>
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Über mich:</h2>
+        <p class="mt-6 text-lg leading-8 text-slate-300">
+          Hi, ich bin Jeremy! 🕹️ <br>
+
+          Schon seit meiner Kindheit begleiten mich Videospiele in allen Formen und Farben. Heute hat mich diese Faszination wieder voll gepackt – allerdings aus einer neuen Perspektive:<span class="font-semibold text-purple-400"> der Spieleentwicklung</span>.
+
+          Auf dieser Seite nehme ich dich mit auf meine Reise als Hobby-Entwickler. Du findest hier Einblicke in das, was ich bereits gelernt habe, sowie Projekte woran ich aktuell in meiner Freizeit tüftle. Wichtig zu wissen: Alles, was du hier siehst (inklusive dieser Website), sind reine <span class="font-semibold text-purple-400">Herzblut-Projekte</span>, die ich nebenbei entwickle.
+
+          Natürlich wird bei all dem Code das Zocken selbst nie zu kurz kommen!
+
+          <span class="font-semibold text-purple-400">Willst du mehr über meinen Tech-Stack erfahren?</span> Welche Sprachen und Tools ich nutze, erfährst du mit einem Klick:        
+        </p>
+      </div>
     </div>
-    </div>
+  </div>
+  <div class="mt-10 text-center">
+    <NuxtLink to="/about" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+      Näheres zu mir
+    </NuxtLink>
   </div>
 </section>
 
