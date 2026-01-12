@@ -48,12 +48,6 @@
                   </li>
                   <li>
                     <p>
-                      <span class="font-semibold">Disziplin & Technik:</span> 
-                      Es folgte Schichtarbeit in der Autoteile-Produktion und ein Umzug von Bayern nach Hamburg, wo ich deutschlandweit als Montage-Assistent unterwegs war.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
                       <span class="font-semibold">Die IT-Welt:</span> 
                       Ich absolvierte eine Umschulung zum <span class="text-1xl font-semibold text-purple-400">Fachinformatiker für Anwendungsentwicklung</span> – der Grundstein für meine heutige Leidenschaft.
                     </p>
