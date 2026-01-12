@@ -6,20 +6,23 @@
         <!-- 1. Vorstellung -->
         <section class="mb-10 text-center">
           <img src="/games/dungeon-crawler/images/placeholder.png" alt="Dein Name" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200 dark:border-gray-700">
-          <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Moin! Ich bin Jeremy – Engineer, Familienvater & Game Dev aus Leidenschaft.</h1>
+          <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Hi! Ich bin Jeremy – Engineer, Familienvater & Game Dev aus Leidenschaft.</h1>
           <p>Schön, dass du auf meine Seite gefunden hast! Hier erfährst du mehr über meinen Weg vom Handwerk in die Softwareentwicklung und mein aktuelles Herzensprojekt: die Spieleentwicklung.</p>
         </section>
 
         <div class="container mx-auto px-4 py-8">
-
           <div class="space-y-16">
             <section>
-              <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Wer ich bin</h2>
-              <p class="text-lg leading-relaxed">
-                Ich bin Jeremy, 34 Jahre alt, verheiratet und stolzer Vater von zwei Kindern. Hauptberuflich arbeite ich aktuell als Test-Engineer in einem Softwarehaus. Wenn ich nicht gerade Bugs jage oder an Code schraube, verbringe ich meine Zeit am liebsten mit meiner Familie in der Natur beim Wandern oder vertiefe mich in ein gutes Buch. <br>
-              </p>
+              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+                <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Wer ich bin</h2>
+                <p class="text-lg leading-relaxed">
+                  Ich bin Jeremy, 34 Jahre alt, verheiratet und stolzer Vater von zwei Kindern. Hauptberuflich arbeite ich aktuell als Test-Engineer in einem Softwarehaus. Wenn ich nicht gerade Bugs jage oder an Code schraube, verbringe ich meine Zeit am liebsten mit meiner Familie in der Natur beim Wandern oder vertiefe mich in ein gutes Buch. <br>
+                </p>
+              </div>
             </section>
+
             <section>
+              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Mein Weg: Von der Hobelbank zum Quellcode</h2>
                 <p>
                   Mein beruflicher Werdegang war alles andere als geradlinig – und genau das hat mich geprägt: <br>
@@ -56,9 +59,11 @@
                     </p>
                   </li>
                 </ul>
+              </div>
             </section>
 
             <section>
+              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Was ich tue, wenn der Rechner glüht</h2>
               <p class="text-lg leading-relaxed">
                 Meine Freizeit gehört der Kreativität und der Technik. Ich bin ein absoluter Wissensjunkie und lese viel – von Lit-RPG bis hin zu Fachliteratur (Rheinwerk-Bücher zu C/C++, Hacking & Security oder Blender).
@@ -84,9 +89,11 @@
                     </p>
                   </li>
                 </ul>
+              </div>
             </section>
 
             <section>
+              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Warum diese Website? Meine Reise durch die Spieleentwicklung</h2>
               <p class="text-lg leading-relaxed">
                 Ich beschäftige mich schon seit Jahren mit Game Dev, aber lange Zeit blieb ich an der Oberfläche. Ich habe viel gelesen und probiert, aber nie ein Projekt wirklich "final" gemacht. Das hat sich vor etwa 2-3 Jahren geändert.              </p>
@@ -111,9 +118,11 @@
                     </p>
                   </li>
                 </ul>
+              </div>
             </section>
 
             <section>
+              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Was dich hier erwartet</h2>
               <p>In meinem <span class="text-1xl font-semibold text-purple-400">Devlog</span> nehme ich dich mit hinter die Kulissen. Ich möchte:</p>
               <ul class="list-disc list-outside ml-6"> 
@@ -142,6 +151,7 @@
               <p>
                 Eine detaillierte Liste meiner technischen Fähigkeiten findest du auf meiner Kompetenzen-Seite.
               </p>
+              </div>
             </section>
           </div>
         </div>

@@ -23,37 +23,22 @@
 <!-- Ersetze die komplette <section id="about"> -->
 <section id="about" class="py-20">
   <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
-    <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 items-center">
-      
-    <!-- Bild-Spalte -->
-    <div class="flex justify-center lg:justify-start">
-      <div class="w-64 h-64 rounded-full bg-gray-800 ring-4 ring-purple-500/50 flex items-center justify-center">
-        <!-- Hier kommt dein Bild hin -->
-        <span class="text-slate-400">Dein Bild</span>
-      </div>
-    </div>
+    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Vom Handwerk zum Code: Meine Game-Dev Reise</h2>
+    <p class="mt-6 text-lg leading-8 text-slate-300">
+      Hi! Ich bin Jeremy. 
+      Früher habe ich als Schreiner Möbel gebaut und war acht Jahre bei der Marine – heute bin ich Test-Engineer
+      und leidenschaftlicher Spieleentwickler. 
+      Auf dieser Seite dokumentiere ich meinen Weg in der <span class="text-1xl font-semibold text-purple-400">Godot Engine</span>, 
+      teile meine Workflows in der <span class="text-1xl font-semibold text-purple-400">3D-Modellierung</span> und schreibe über alles, was mich technisch begeistert.
 
-    <!-- Text-Spalte -->
-      <div>
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Über mich:</h2>
-        <p class="mt-6 text-lg leading-8 text-slate-300">
-          Hi, ich bin Jeremy! 🕹️ <br>
-
-          Schon seit meiner Kindheit begleiten mich Videospiele in allen Formen und Farben. Heute hat mich diese Faszination wieder voll gepackt – allerdings aus einer neuen Perspektive:<span class="font-semibold text-purple-400"> der Spieleentwicklung</span>.
-
-          Auf dieser Seite nehme ich dich mit auf meine Reise als Hobby-Entwickler. Du findest hier Einblicke in das, was ich bereits gelernt habe, sowie Projekte woran ich aktuell in meiner Freizeit tüftle. Wichtig zu wissen: Alles, was du hier siehst (inklusive dieser Website), sind reine <span class="font-semibold text-purple-400">Hobby-Projekte</span>, die ich nebenbei entwickle.
-
-          Natürlich wird bei all dem Code das Zocken selbst nie zu kurz kommen!
-
-          <span class="font-semibold text-purple-400">Willst du mehr über meinen Tech-Stack erfahren?</span> Welche Sprachen und Tools ich nutze, erfährst du mit einem Klick:        
-        </p>
-      </div>
-    </div>
-    <div class="mt-10 text-center">
-      <NuxtLink to="/about" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
-        Näheres zu mir
-      </NuxtLink>
-    </div>
+      Aktuell im Fokus: Mein erstes eigenes 3D-Spiel, an dem ich nach Feierabend schraube. 
+      Schau in mein <span class="text-1xl font-semibold text-purple-400">Devlog</span>, um zu sehen, wie aus einer Idee Code und Grafik wird!        
+    </p>
+  </div>
+  <div class="mt-10 text-center">
+    <NuxtLink to="/about" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+      Näheres zu mir
+    </NuxtLink>
   </div>
 </section>
 
@@ -248,7 +233,7 @@
 
 <!-- Ersetze die komplette <section id="contact"> -->
 <section id="contact" class="py-20 sm:py-24 text-center">
-  <div class="bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 mx-auto max-w-2xl px-4">
+  <div class="container mx-auto px-4 max-w-4xl bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Lass uns vernetzen!</h2>
     <p class="mt-6 text-lg leading-8 text-slate-300">
       Du hast eine Idee für ein gemeinsames Projekt, Feedback zu meinen Spielen oder möchtest dich einfach nur austauschen? Ich freue mich, von dir zu hören.
