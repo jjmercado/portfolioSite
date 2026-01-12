@@ -41,7 +41,7 @@
 
           Schon seit meiner Kindheit begleiten mich Videospiele in allen Formen und Farben. Heute hat mich diese Faszination wieder voll gepackt – allerdings aus einer neuen Perspektive:<span class="font-semibold text-purple-400"> der Spieleentwicklung</span>.
 
-          Auf dieser Seite nehme ich dich mit auf meine Reise als Hobby-Entwickler. Du findest hier Einblicke in das, was ich bereits gelernt habe, sowie Projekte woran ich aktuell in meiner Freizeit tüftle. Wichtig zu wissen: Alles, was du hier siehst (inklusive dieser Website), sind reine <span class="font-semibold text-purple-400">Herzblut-Projekte</span>, die ich nebenbei entwickle.
+          Auf dieser Seite nehme ich dich mit auf meine Reise als Hobby-Entwickler. Du findest hier Einblicke in das, was ich bereits gelernt habe, sowie Projekte woran ich aktuell in meiner Freizeit tüftle. Wichtig zu wissen: Alles, was du hier siehst (inklusive dieser Website), sind reine <span class="font-semibold text-purple-400">Hobby-Projekte</span>, die ich nebenbei entwickle.
 
           Natürlich wird bei all dem Code das Zocken selbst nie zu kurz kommen!
 
@@ -49,11 +49,11 @@
         </p>
       </div>
     </div>
-  </div>
-  <div class="mt-10 text-center">
-    <NuxtLink to="/about" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
-      Näheres zu mir
-    </NuxtLink>
+    <div class="mt-10 text-center">
+      <NuxtLink to="/about" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+        Näheres zu mir
+      </NuxtLink>
+    </div>
   </div>
 </section>
 
