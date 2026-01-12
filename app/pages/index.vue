@@ -2,7 +2,7 @@
   <div> <!-- Die <NuxtLayout> Hülle ist jetzt in app.vue, also brauchen wir sie hier nicht mehr -->
 <!-- Ersetze die komplette <section id="hero"> in app/pages/index.vue -->
 
-<section id="hero" class="text-center py-24 sm:pt-24">  <!-- Hintergrund-Glow-Effekt -->
+<section id="hero" class="text-center pt-24 sm:pt-24">  <!-- Hintergrund-Glow-Effekt -->
   <!-- Inhalt -->
   <div class="mx-auto max-w-2xl px-4">
     <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -22,7 +22,7 @@
 
 <!-- Ersetze die komplette <section id="about"> -->
 <section id="about" class="py-20">
-  <div class="container mx-auto px-4 max-w-4xl">
+  <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
     <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 items-center">
       
     <!-- Bild-Spalte -->
@@ -248,7 +248,7 @@
 
 <!-- Ersetze die komplette <section id="contact"> -->
 <section id="contact" class="py-20 sm:py-24 text-center">
-  <div class="mx-auto max-w-2xl px-4">
+  <div class="bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 mx-auto max-w-2xl px-4">
     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Lass uns vernetzen!</h2>
     <p class="mt-6 text-lg leading-8 text-slate-300">
       Du hast eine Idee für ein gemeinsames Projekt, Feedback zu meinen Spielen oder möchtest dich einfach nur austauschen? Ich freue mich, von dir zu hören.

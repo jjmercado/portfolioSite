@@ -1,7 +1,7 @@
 <template>
   <div class=" text-gray-800 dark:text-gray-200 min-h-screen">
     <div class="container mx-auto p-4 sm:p-6 lg:p-8">
-      <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 sm:p-8">
+      <div class="max-w-4xl mx-auto p-6 sm:p-8">
 
         <!-- 1. Vorstellung -->
         <section class="mb-10 text-center">
