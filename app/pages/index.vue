@@ -259,6 +259,14 @@
       .limit(3)
       .all()
   );
+
+    // Metadaten für die Seite (gut für SEO)
+  useHead({
+    title: 'Home',
+    meta: [
+      { name: 'startpage', content: 'Erfahre hier alles über mich und über meine Kompetenzen in der Spiele- und Webentwicklung.' }
+    ]
+  });
 </script>
 
 <style scoped>

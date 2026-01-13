@@ -106,9 +106,9 @@ const competencies = ref([
 
 // Metadaten für die Seite (gut für SEO)
 useHead({
-  title: 'Über Mich - Jeremy',
+  title: 'Skills',
   meta: [
-    { name: 'description', content: 'Erfahre mehr über mich, meine Kompetenzen in der Spiele- und Webentwicklung.' }
+    { name: 'skills', content: 'Erfahre hier über meine Kompetenzen in der Spiele- und Webentwicklung.' }
   ]
 });
 </script>

@@ -143,7 +143,7 @@
                 Egal, ob du selbst Entwickler bist oder einfach nur neugierig: Ich freue mich, dass du mich auf dieser Reise begleitest!
               </p>
               <p>
-                Eine detaillierte Liste meiner technischen Fähigkeiten findest du auf meiner Kompetenzen-Seite.
+                Eine detaillierte Liste meiner technischen Fähigkeiten findest du auf meiner Skills-Seite.
               </p>
               </div>
             </section>
@@ -151,7 +151,7 @@
         </div>
         <div class="mt-10 text-center">
           <NuxtLink to="/competence" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
-            Kompetenzen
+            Skills
           </NuxtLink>
         </div>
       </div>
@@ -164,7 +164,7 @@
 useHead({
   title: 'Über Mich - Jeremy',
   meta: [
-    { name: 'description', content: 'Erfahre mehr über mich, meine Kompetenzen in der Spiele- und Webentwicklung.' }
+    { name: 'description', content: 'Erfahre mehr über mich, meine Skills in der Spiele- und Webentwicklung.' }
   ]
 });
 </script>
