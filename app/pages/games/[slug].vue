@@ -12,18 +12,20 @@
       </div>
       
       <!-- Titel des Spiels -->
-      <article class="mx-auto max-w-4xl">
+      <article class="mx-auto">
         <!-- Beschreibung des Spiels -->
-        <div class="content-section my-8 prose lg:prose-xl mx-auto">
-          <h2 class="text-2xl font-semibold mb-2 text-center">Über das Spiel</h2>
-          <ContentRenderer :value="data" />
+        <div class="container bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 content-section my-8 prose-headings:text-white prose lg:prose-xl">
+          <h2 class="font-semibold mb-2 text-center">Über das Spiel</h2>
+          <ContentRenderer class="text-white" :value="data" />
         </div>
       </article>
 
         <!-- Technische Details -->
-        <div class="tech-details my-8 p-4 border rounded-lg">
+        <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700 max-w-4xl tech-details my-8 p-4 border rounded-lg">
             <h3 class="text-xl font-semibold mb-2">Technische Details</h3>
-            <p><strong>Sprache/Engine:</strong> {{ data.meta.engine }}</p>
+            <p><strong>Sprache:</strong> {{ data.meta.language }}</p>
+            <p v-if="data.meta.framework"><strong>Framework:</strong> {{ data.meta.framework }}</p>
+            <p v-if="data.meta.engine"><strong>Engine:</strong> {{ data.meta.engine }}</p>
             <p><strong>Entwicklungszeit:</strong> {{ data.meta.devtime }}</p>
         </div>
 
@@ -57,7 +59,7 @@
 
 <script setup>
 const route = useRoute();
-// Wir verwenden queryContent mit dem manuell erstellten Pfad
+
 const { data } = await useAsyncData(route.path, () => {
   return queryCollection('games').path(route.path).first();
 });
@@ -72,10 +74,5 @@ const { data } = await useAsyncData(route.path, () => {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Stellt sicher, dass der Prose-Stil von Nuxt Content die Farben nicht überschreibt */
-.prose a {
-    color: var(--accent-color);
 }
 </style>

@@ -2,8 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
+    '@nuxt/image'
+  ],
   app: {
     baseURL: '/portfolioSite/'
   },
+  content: {
+    renderer: {
+      anchorLinks: {
+        h3: false
+      }
+    }
+  }
 })
