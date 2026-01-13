@@ -1,14 +1,14 @@
 ---
-title: 'Mein erster Devlog-Eintrag! space'
+title: 'Mein erster Devlog-Eintrag! dung'
 description: 'Eine kurze Zusammenfassung, worum es in diesem Eintrag geht.'
-date: '2025-12-17'
-project: 'space-trader'
-project_image: '/games/space-trader/images/placeholder.png' 
+date: '2025-12-18'
+project: 'dungeon-crawler'
+project_image: '/games/polyslayer/images/placeholder.png' 
 ---
 
 # Willkommen zu meinem Devlog
 
-space-trader
+dungeon-crawler
 
 Das ist der erste Eintrag, der mit Nuxt Content erstellt wurde. Es ist wirklich einfach!
 

@@ -8,24 +8,24 @@ export default defineContentConfig({
       // Load every file inside the `content` directory
       source: 'devlog/**'
     }),
-    dungeonCrawler: defineCollection({
+    polyslayer: defineCollection({
       // Specify the type of content in this collection
       type: 'page',
       // Load every file inside the `content` directory
-      source: 'devlog/dungeon-crawler/*.md',      
+      source: 'devlog/polyslayer/*.md',      
       schema: z.object({
         date: z.date()
       })
     }),
-    spaceTrader: defineCollection({
-      // Specify the type of content in this collection
-      type: 'page',
-      // Load every file inside the `content` directory
-      source: 'devlog/space-trader/*.md',
-      schema: z.object({
-        date: z.date()
-      })
-    }),
+    // spaceTrader: defineCollection({
+    //   // Specify the type of content in this collection
+    //   type: 'page',
+    //   // Load every file inside the `content` directory
+    //   source: 'devlog/space-trader/*.md',
+    //   schema: z.object({
+    //     date: z.date()
+    //   })
+    //}),
     games: defineCollection({
       // Specify the type of content in this collection
       type: 'page',
