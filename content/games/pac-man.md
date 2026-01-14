@@ -2,7 +2,7 @@
 title: 'Pac-Man'
 description: 'Dieses Projekt ist meine Implementierung des zeitlosen Arcade-Hits Pac-Man, entwickelt in C++ unter Verwendung der SFML-Bibliothek. Der Fokus lag hierbei auf der Umsetzung komplexer Pfadfindungs-Algorithmen und einer kachel-basierten (Tile-based) Weltlogik.'
 image: '/games/pac-man/images/pac-man.png'
-video: '/games/pac-man/videos/pac-man.mp4'
+video: '/portfolioSite/games/pac-man/videos/pac-man.mp4'
 gif: ''
 engine: ''
 framework: 'SFML'

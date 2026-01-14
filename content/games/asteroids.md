@@ -2,7 +2,7 @@
 title: 'Asteroids'
 description: 'Dieses Projekt ist meine Implementierung des Arcade-Klassikers Asteroids, entwickelt in C++ unter Verwendung der SFML-Bibliothek. Das Ziel war es, die grundlegenden Mechaniken eines 2D-Space-Shooters von Grund auf zu programmieren.'
 image: '/games/asteroids/images/Asteroids.png'
-video: '/games/asteroids/videos/Asteroids.mp4'
+video: '/portfolioSite/games/asteroids/videos/Asteroids.mp4'
 gif: ''
 engine: ''
 framework: 'SFML'

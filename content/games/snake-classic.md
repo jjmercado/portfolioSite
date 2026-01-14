@@ -2,7 +2,7 @@
 title: 'Snake Classic'
 description: 'Dieses Projekt ist meine Implementierung des Arcade-Klassikers Snake, entwickelt in C++ unter Verwendung der SFML-Bibliothek. Das Ziel war es, die grundlegenden Mechaniken des Spiels von Grund auf zu programmieren.'
 image: '/games/snake-classic/images/snake-classic.png'
-video: '/games/snake-classic/videos/snake-classic.mp4'
+video: '/portfolioSite/games/snake-classic/videos/snake-classic.mp4'
 gif: ''
 engine: ''
 framework: 'SFML'
