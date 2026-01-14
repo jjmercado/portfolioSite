@@ -58,7 +58,7 @@
         <!-- Standbild (wird angezeigt, wenn nicht gehovert) -->
         <NuxtImg :src="game.image" :alt="`${game.title} Standbild`" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden"/>
         <!-- Animiertes GIF (wird bei Hover angezeigt) -->
-        <NuxtImg :src="game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block"/>
+        <video loop autoplay :src="game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block"/>
       </div>
       
       <!-- Inhalts-Container mit Link zur Detailseite -->
@@ -90,7 +90,7 @@
 
       <!-- Schleife, die für jeden Eintrag eine Karte generiert -->
       <NuxtLink v-else v-for="post in latestPosts" :key="post.path" :to="post.path"
-              class="block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
+        class="block bg-gray-900/50 p-6 rounded-lg ring-1 ring-white/10 transition-all duration-300 hover:ring-purple-500 hover:bg-gray-900">
         
         <div class="flex justify-between items-baseline">
             <h3 class="text-xl font-bold text-white">{{ post.title }}</h3>
@@ -144,12 +144,12 @@ const games = computed(() => {
     description: game.description,
     slug: game.path.split('/').pop(),
     image: game.meta.image,
-    video: game.meta.gif,
+    video: game.meta.video,
     tags: game.meta.tags || []
   }));
 });
 
-const projectName = 'dungeonCrawler';
+const projectName = 'polyslayer';
 
 const { data: latestPosts } = await useAsyncData(`latest-posts-${projectName}`, () => 
   queryCollection(projectName)

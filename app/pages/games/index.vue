@@ -8,14 +8,14 @@
 
       <!-- Dynamische Schleife, die für jedes Spiel eine Karte generiert -->
       <div v-for="game in games" :key="game.slug" 
-           class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20">
+           class="group bg-slate-800 rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-rose-500/20">
         
         <!-- Bild/Video-Container -->
         <div class="w-full h-48 overflow-hidden">
           <!-- Standbild (wird angezeigt, wenn nicht gehovert) -->
           <NuxtImg :src="game.image" :alt="`${game.title} Standbild`" class="w-full h-full object-cover block group-hover:hidden group-focus-within:hidden"/>
           <!-- Animiertes GIF (wird bei Hover angezeigt) -->
-          <NuxtImg :src="game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block"/>
+          <video autoplay="true" loop="true" :src="game.video" :alt="`${game.title} Animation`" class="w-full h-full object-cover hidden group-hover:block group-focus-within:block"></video>
         </div>
         
         <!-- Inhalts-Container mit Link zur Detailseite -->
@@ -25,7 +25,7 @@
           
           <!-- Tags -->
           <div class="flex flex-wrap gap-2">
-            <span v-for="tag in game.tags" :key="tag" class="bg-cyan-400/10 text-cyan-400 text-xs font-medium px-2.5 py-1 rounded-full">
+            <span v-for="tag in game.tags" :key="tag" class="bg-rose-400/10 text-rose-400 text-xs font-medium px-2.5 py-1 rounded-full">
               {{ tag }}
             </span>
           </div>
@@ -53,7 +53,7 @@ const games = computed(() => {
     description: game.description,
     slug: game.path.split('/').pop(),
     image: game.meta.image,
-    video: game.meta.gif, // Pfad zum GIF
+    video: game.meta.video,
     tags: game.meta.tags || [] // Stellt sicher, dass tags immer ein Array ist
   }));
 });

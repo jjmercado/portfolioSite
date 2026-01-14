@@ -1,9 +1,9 @@
 ---
 title: 'Asteroids'
 description: 'Dieses Projekt ist eine moderne Implementierung des Arcade-Klassikers Asteroids, entwickelt in C++ unter Verwendung der SFML-Bibliothek. Das Ziel war es, die grundlegenden Mechaniken eines 2D-Space-Shooters von Grund auf zu programmieren.'
-image: '/games/asteroids/images/placeholder.png'
-video: ''
-gif: '/games/asteroids/videos/placeholder.gif'
+image: '/games/asteroids/images/Asteroids.png'
+video: '/games/asteroids/videos/Asteroids.mp4'
+gif: ''
 engine: ''
 framework: 'SFML'
 language: 'C++'
@@ -11,7 +11,7 @@ devtime: 'ca. 3 Monate'
 buildsystem: 'CMake'
 downloads:
     windows: '/downloads/crawler_win.zip'
-    linux: '/downloads/crawler_linux.tar.gz'
+    linux: '/downloads/Asteroids.tar.gz'
 tags:
     - C++
     - SFML
@@ -19,13 +19,13 @@ tags:
 
 ### Projektbeschreibung: Asteroids (C++ & SFML)
 
-Dieses Projekt ist eine moderne Implementierung des Arcade-Klassikers Asteroids, entwickelt in C++ unter Verwendung der SFML-Bibliothek (Simple and Fast Multimedia Library). Das Ziel war es, die grundlegenden Mechaniken eines 2D-Space-Shooters von Grund auf zu programmieren.
+Dieses Projekt ist meine Implementierung des Arcade-Klassikers Asteroids, entwickelt in C++ unter Verwendung der SFML-Bibliothek (Simple and Fast Multimedia Library). Das Ziel war es, die grundlegenden Mechaniken eines 2D-Space-Shooters von Grund auf zu programmieren.
 
 ### Das Spielprinzip
 
 Der Spieler steuert ein dreieckiges Raumschiff in einem zweidimensionalen Asteroidenfeld. Die Besonderheit liegt in der Steuerung und der Physik:
 
-- Trägheit (Inertia): Das Schiff bewegt sich nach dem Beschleunigen physikalisch korrekt weiter, was     präzises Manövrieren erfordert.
+- Trägheit: Das Schiff bewegt sich nach dem Beschleunigen physikalisch korrekt weiter, was     präzises Manövrieren erfordert.
 
 - Wrapping-World: Objekte, die den Bildschirmrand verlassen, erscheinen auf der gegenüberliegenden Seite wieder (Screen Wrapping).
 
@@ -33,12 +33,12 @@ Der Spieler steuert ein dreieckiges Raumschiff in einem zweidimensionalen Astero
 
 ### Technische Highlights & Features
 
-- Objektorientierte Programmierung: Umsetzung von Klassen für Entity, Player, Asteroid und Bullet mit Vererbung und Polymorphie.
+- Objektorientierte Programmierung: Umsetzung von Klassen für Ship, Bullet, Asteroid mit Vererbung und Polymorphie.
 
-- Vektorphysik: Berechnung von Flugbahnen, Rotation und Geschwindigkeit basierend auf vektorieller Mathematik.
+- Vektorphysik: Berechnung Rotation und Geschwindigkeit basierend auf vektorieller Mathematik.
 
-- Kollisionserkennung: Implementierung effizienter Hitboxen (Circle-based Collision), um Interaktionen zwischen Geschossen, Asteroiden und dem Schiff zu prüfen.
+- Kollisionserkennung: Implementierung von Hitboxen, um Interaktionen zwischen Geschossen, Asteroiden und dem Schiff zu prüfen.
 
 - Game Loop: Ein sauberer Game-Loop zur Trennung von Input-Verarbeitung, Logik-Update und Rendering.
 
-- Ressourcenmanagement: Laden und Verwalten von Texturen, Fonts und Soundeffekten über SFML.
+- Ressourcenmanagement: Laden und Verwalten von Texturen über SFML.
