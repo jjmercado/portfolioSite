@@ -8,6 +8,7 @@ engine: ''
 framework: 'SFML'
 language: 'C++'
 devtime: 'ca. 1 Monate'
+githubLink: 'https://github.com/jjmercado/Snake_classic'
 buildsystem: 'CMake'
 downloads:
     windows: '/downloads/SnakeApp.zip'
