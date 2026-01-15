@@ -8,6 +8,7 @@ engine: ''
 framework: 'SFML'
 language: 'C++'
 devtime: 'ca. 1 Monate'
+githubLink: 'https://github.com/jjmercado/Pong'
 buildsystem: 'CMake'
 downloads:
     windows: '/downloads/crawler_win.zip'

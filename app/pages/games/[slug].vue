@@ -27,6 +27,12 @@
             <p v-if="data.meta.framework"><strong>Framework:</strong> {{ data.meta.framework }}</p>
             <p v-if="data.meta.engine"><strong>Engine:</strong> {{ data.meta.engine }}</p>
             <p><strong>Entwicklungszeit:</strong> {{ data.meta.devtime }}</p>
+            <p>
+              <strong>GitHub: </strong> 
+              <NuxtLink target="_blank" :to="data.meta.githubLink" class="underline font-bold text-blue-600 dark:text-blue-400">
+                {{data.title}} Source-Code
+              </NuxtLink>
+            </p>
         </div>
 
         <!-- Download-Bereich -->
