@@ -17,7 +17,7 @@ tags:
     - SFML
 ---
 
-### Projektbeschreibung: Pac-Man (C++ & SFML)
+### Projektbeschreibung: Pac-Man
 
 Dieses Projekt ist meine Implementierung des zeitlosen Arcade-Hits Pac-Man, entwickelt in C++ unter Verwendung der SFML-Bibliothek. Der Fokus lag hierbei auf der Umsetzung komplexer Pfadfindungs-Algorithmen und einer kachel-basierten (Tile-based) Weltlogik.
 

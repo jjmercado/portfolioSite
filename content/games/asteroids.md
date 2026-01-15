@@ -7,7 +7,7 @@ gif: ''
 engine: ''
 framework: 'SFML'
 language: 'C++'
-devtime: 'ca. 3 Monate'
+devtime: 'ca. 2 Monate'
 buildsystem: 'CMake'
 downloads:
     windows: '/downloads/crawler_win.zip'
@@ -17,7 +17,7 @@ tags:
     - SFML
 ---
 
-### Projektbeschreibung: Asteroids (C++ & SFML)
+### Projektbeschreibung: Asteroids
 
 Dieses Projekt ist meine Implementierung des Arcade-Klassikers Asteroids, entwickelt in C++ unter Verwendung der SFML-Bibliothek (Simple and Fast Multimedia Library). Das Ziel war es, die grundlegenden Mechaniken eines 2D-Space-Shooters von Grund auf zu programmieren.
 

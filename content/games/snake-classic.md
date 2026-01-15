@@ -7,7 +7,7 @@ gif: ''
 engine: ''
 framework: 'SFML'
 language: 'C++'
-devtime: 'ca. 3 Monate'
+devtime: 'ca. 1 Monate'
 buildsystem: 'CMake'
 downloads:
     windows: '/downloads/SnakeApp.zip'
@@ -17,7 +17,7 @@ tags:
     - SFML
 ---
 
-### Projektbeschreibung: Snake (C++ & SFML)
+### Projektbeschreibung: Snake
 
 Dieses Projekt ist meine Umsetzung des legendären Arcade-Klassikers Snake, entwickelt in C++ mit der SFML-Bibliothek. Das Ziel des Projekts war die Implementierung einer dynamischen Listen-Logik und eines grid-basierten Bewegungssystems, um die klassischen Gameplay-Mechaniken originalgetreu nachzubilden.
 
