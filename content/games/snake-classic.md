@@ -26,19 +26,17 @@ Dieses Projekt ist meine Umsetzung des legendären Arcade-Klassikers Snake, entw
 
 Der Spieler steuert eine Schlange durch ein zweidimensionales Spielfeld. Mit jedem aufgenommenen Item wächst die Schlange, was die Navigation zunehmend erschwert. Die Kernmechaniken umfassen:
 
-- Grid-Movement: Die Schlange bewegt sich in festen Schritten auf einem unsichtbaren Gitter, wobei die Richtung nur um 90 Grad geändert werden kann.
+- Grid-Movement: Die Schlange bewegt sich in festen Schritten auf einem Gitter, wobei die Richtung nur um 90 Grad geändert werden kann.
 
 - Wachstums-Logik: Jedes Mal, wenn der Kopf der Schlange mit einem Futter-Objekt kollidiert, wird ein neues Segment am Ende angehängt.
 
-- Game-Over-Conditions: Das Spiel endet, sobald der Kopf die Spielfeldbegrenzung berührt oder mit dem eigenen Körper kollidiert (Self-Collision).
+- Neustart: Das Spiel endet nicht es startet immer wieder neu, sobald der Kopf die Spielfeldbegrenzung berührt oder mit dem eigenen Körper kollidiert (Self-Collision).
 
 ### Technische Highlights & Features
 
-- Datenstrukturen: Effiziente Verwaltung der Schlangensegmente (z. B. mittels std::vector oder std::deque), um das Nachrücken der Glieder performant zu berechnen.
+- Datenstrukturen: Effiziente Verwaltung der Schlangensegmente, um das Nachrücken der Glieder performant zu berechnen.
 
-- Input-Buffering: Implementierung eines Buffers für Tastatureingaben, um zu verhindern, dass die Schlange durch zu schnelle Richtungswechsel eine unmögliche 180-Grad-Wende in sich selbst vollführt.
-
-- Grid-basierte Kollisionserkennung: Mathematische Prüfung der Positionen auf dem Koordinatensystem zur Erkennung von Treffern (Kopf vs. Futter oder Kopf vs. Körper).
+- Grid-basierte Kollisionserkennung: Prüfung der Positionen auf dem Koordinatensystem zur Erkennung von Treffern (Kopf vs. Futter oder Kopf vs. Körper).
 
 - Randomized Spawning: Algorithmus zur Platzierung von Futter auf freien Feldern, die nicht vom Körper der Schlange besetzt sind.
 
