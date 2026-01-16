@@ -30,6 +30,12 @@ Der Spieler steuert ein dreieckiges Raumschiff in einem zweidimensionalen Astero
 
 - **Zerstörung:** Große Asteroiden zerfallen bei Treffern in kleinere, schnellere Fragmente.
 
+### Steuerung
+
+Das Spiel ist für zwei Spieler an einer Tastatur konzipiert:
+
+- Raumschiff: Taste <kbd>W</kbd> (vorwärts), <kbd>A</kbd> (links Rotieren), <kbd>D</kbd> (rechts Rotieren) und <kbd>Leertaste</kbd> (schießen)
+
 ### Technische Highlights & Features
 
 - **Vektorphysik:** Berechnung Rotation und Geschwindigkeit basierend auf vektorieller Mathematik.

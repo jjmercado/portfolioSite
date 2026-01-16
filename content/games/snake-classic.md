@@ -32,6 +32,10 @@ Der Spieler steuert eine Schlange durch ein zweidimensionales Spielfeld. Mit jed
 
 - Neustart: Das Spiel endet nicht es startet immer wieder neu, sobald der Kopf die Spielfeldbegrenzung berührt oder mit dem eigenen Körper kollidiert (Self-Collision).
 
+### Steuerung
+
+- Schlange: Taste <kbd>W</kbd> (hoch), <kbd>S</kbd> (runter), <kbd>A</kbd> (links) und <kbd>D</kbd> (rechts)
+
 ### Technische Highlights & Features
 
 - Datenstrukturen: Effiziente Verwaltung der Schlangensegmente, um das Nachrücken der Glieder performant zu berechnen.
