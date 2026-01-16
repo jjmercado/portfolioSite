@@ -25,23 +25,25 @@ Dieses Projekt ist meine Umsetzung des Arcade-Klassikers Pong, ausgelegt als lok
 ### Das Spielprinzip
 
 Pong simuliert ein Tischtennis-Duell. Der Ball prallt von Wänden und Paddles ab.
+ 
+- **Reflexions-Gameplay:** Der Ball prallt von den oberen und unteren Begrenzungen sowie von den Spieler-Paddles ab.
 
-#### Reflexions-Gameplay: 
-- Der Ball prallt von den oberen und unteren Begrenzungen sowie von den Spieler-Paddles ab.
 
-#### Punktesystem:
-- Ein Punkt wird vergeben, wenn der Ball die hintere Spielfeldbegrenzung eines Spielers überschreitet. Das Spiel endet nach Erreichen einer vordefinierten Punktzahl.
+- **Punktesystem:** Ein Punkt wird vergeben, wenn der Ball die hintere Spielfeldbegrenzung eines Spielers überschreitet. Das Spiel endet nach Erreichen einer vordefinierten Punktzahl.
 
-#### Game-Loop:
-- Saubere Trennung von Input, Spiellogik und Rendering für flüssiges Gameplay.
+- **Game-Loop:** Saubere Trennung von Input, Spiellogik und Rendering für flüssiges Gameplay.
+
+### Steuerung
+
+Das Spiel ist für zwei Spieler an einer Tastatur konzipiert:
+
+- Linker Spieler: Tasten <kbd>W</kbd> (hoch) und <kbd>S</kbd> (runter)
+- Rechter Spieler: Pfeiltasten <kbd>Oben</kbd> und <kbd>Unten</kbd>
 
 ### Technische Highlights & Features
 
-#### Vektor-Reflexion:
-- Mathematische Berechnung der Abprallwinkel. Die Flugbahn wird manipuliert, je nachdem, an welcher Stelle des Paddles der Ball auftrifft (Steilerer Winkel bei Treffern an den Kanten).
-
-#### AABB-Kollisionserkennung: 
-- Implementierung von Axis-Aligned Bounding Boxes zur schnellen und zuverlässigen Erkennung von Kollisionen zwischen Ball, Wänden und Paddles.
-
-#### UI & Scoring-System: 
-- Dynamische Anzeige des Spielstands mittels SFML-Text-Komponenten und Echtzeit-Aktualisierung des Spielfelds.
+- **Vektor-Reflexion:** Mathematische Berechnung der Abprallwinkel. Die Flugbahn wird manipuliert, je nachdem, an welcher Stelle des Paddles der Ball auftrifft (Steilerer Winkel bei Treffern an den Kanten).
+ 
+- **AABB-Kollisionserkennung:** Implementierung von Axis-Aligned Bounding Boxes zur schnellen und zuverlässigen Erkennung von Kollisionen zwischen Ball, Wänden und Paddles.
+ 
+- **UI & Scoring-System:** Dynamische Anzeige des Spielstands mittels SFML-Text-Komponenten und Echtzeit-Aktualisierung des Spielfelds.

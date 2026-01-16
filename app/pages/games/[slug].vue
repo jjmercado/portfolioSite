@@ -14,9 +14,9 @@
       <!-- Titel des Spiels -->
       <article class="mx-auto">
         <!-- Beschreibung des Spiels -->
-        <div class="container bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 content-section my-8 prose-headings:text-white prose lg:prose-xl">
+        <div class="container bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 content-section my-8 prose prose-invert lg:prose-xl">
           <h2 class="font-semibold mb-2 text-center">Über das Spiel</h2>
-          <ContentRenderer class="text-white" :value="data" />
+          <ContentRenderer :value="data" />
         </div>
       </article>
 
