@@ -1,75 +1,36 @@
-# Nuxt Minimal Starter
+# 🌐 My Game Dev Portfolio (Source Code)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is the repository for my personal portfolio website. Here, I showcase my journey as a game developer, my projects, and my learning progress.
 
-## Setup
+👉 **View Live Version:** [[https://jjmercado.github.io/portfolioSite/](https://jjmercado.github.io/portfolioSite/)]
 
-Make sure to install dependencies:
+## 📋 What does this website offer?
 
-```bash
-# npm
-npm install
+This site serves as a central hub for all my creative work:
 
-# pnpm
-pnpm install
+* **Project Showcase:** Games developed in **C++ (SFML)**, **Unity**, or **Godot**.
+* **Deep Dives:** Explanations of technical backgrounds and code structures.
+* **Downloads:** Direct links to executable files for **Windows & Linux**.
+* **Interactivity:** Opportunities to self-compile and extend projects via GitHub links.
+* **Skills & DevLog:** An overview of my current technologies, skills, and a logbook of my current main project.
 
-# yarn
-yarn install
+## ⚠️ Important Notes on Content
 
-# bun
-bun install
-```
+* **Hobby Status:** All presented games are hobby projects. They are often "Work in Progress," may not be 100% finished, and might contain bugs.
+* **Transparency:** This website is intended to show how I learn and solve problems—learning progress takes priority over perfection.
 
-## Development Server
+## 🛠️ Website Tech Stack
 
-Start the development server on `http://localhost:3000`:
+* [Vue/Nuxt/Tailwind]
+* Github Actions to generate Artifacts.
+* Hosted via GitHub Pages.
 
-```bash
-# npm
-npm run dev
+---
 
-# pnpm
-pnpm dev
+### 📜 License & Copyright
 
-# yarn
-yarn dev
+The code for this website is licensed under the [MIT] License.
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+* **Code:** The source code of this website is under the MIT License. You are welcome to study it and use it for your own projects.
+* **Assets & Content:** All images, videos, and texts on this website are my intellectual property (Copyright) and are not covered by the MIT License. Use of these assets is not permitted without express permission.
+* **Disclaimer:** This is a private portfolio. I assume no liability for any damage caused by downloading or using the projects linked here. Official and secure downloads are only available via my official website [https://jjmercado.github.io/portfolioSite/] or this GitHub repository. Any copies on other domains are unauthorized.
