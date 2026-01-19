@@ -5,7 +5,7 @@
 
         <!-- 1. Vorstellung -->
         <section class="mb-10 text-center">
-          <img src="/games/asteroids/images/Asteroids.png" alt="Dein Name" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200 dark:border-gray-700">
+          <NuxtImg src="/application-picture.jpg" alt="Dein Name" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200 dark:border-gray-700"/>
           <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">
             Hi! Ich bin Jeremy – Engineer, Familienvater & Game Dev aus Leidenschaft.
           </h1>

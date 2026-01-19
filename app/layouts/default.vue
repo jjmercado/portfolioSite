@@ -47,9 +47,8 @@
       <!-- 6. Footer -->
       <footer class="main-footer">
         <div class="social-links">
-          <a href="https://github.com/ihr-profil" target="_blank">GitHub</a>
-          <a href="https://ihr-profil.itch.io/" target="_blank">itch.io</a>
-          <a href="https://linkedin.com/in/ihr-profil" target="_blank">LinkedIn</a>
+          <a href="https://github.com/jjmercado" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/jeremy-mercado-773671296" target="_blank">LinkedIn</a>
         </div>
         <p>&copy; 2026 Astral Anvil Studios. Alle Rechte vorbehalten.</p>
       </footer>
