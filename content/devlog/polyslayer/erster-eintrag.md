@@ -1,18 +1,11 @@
 ---
-title: 'Mein erster Devlog-Eintrag! dung'
+title: 'Mein erster Devlog-Eintrag!'
 description: 'Eine kurze Zusammenfassung, worum es in diesem Eintrag geht.'
 date: '2025-12-18'
-project: 'dungeon-crawler'
+project: 'PolySlayer'
 project_image: '/games/polyslayer/images/placeholder.png' 
 ---
 
 # Willkommen zu meinem Devlog
 
-dungeon-crawler
-
-Das ist der erste Eintrag, der mit Nuxt Content erstellt wurde. Es ist wirklich einfach!
-
-Du kannst hier ganz normal **Markdown** verwenden.
-
-```javascript
-console.log('Hello, Nuxt Content!');
+Näheres Infos folgen.

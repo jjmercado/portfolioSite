@@ -15,7 +15,9 @@
         </NuxtLink>
       </li>
     </ul>
-    <NuxtLink :to="'/devlog'" class="block w-fit mx-auto mt-12 rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Zurück zu den Einträgen von {{ route.params.project }} &rarr;</NuxtLink>
+    <NuxtLink :to="'/devlog'" class="block w-fit mx-auto mt-12 rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+      Zurück zu den Devlog einträgen
+    </NuxtLink>
   </div>
 </template>
 

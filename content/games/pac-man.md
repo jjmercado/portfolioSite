@@ -28,20 +28,17 @@ Der Spieler steuert Pac-Man durch ein Labyrinth, mit dem Ziel, alle Punkte (Pell
 
 - Tile-Based Navigation: Die gesamte Welt besteht aus einem Raster, das die Bewegung einschränkt und die Kollision mit Wänden definiert.
 
-- Geister-KI: Jedes der vier Geister-Objekte verfolgt eine eigene Strategie (z. B. direktes Verfolgen, Abfangen oder zufälliges Umherschweifen).
-
 - Power-Pellets: Das Einsammeln spezieller Items kehrt die Rollen kurzzeitig um, sodass Pac-Man die Geister fressen kann.
 
 - Warp-Tunnel: Seitliche Ausgänge, die den Spieler sofort auf die gegenüberliegende Seite des Spielfelds transportieren.
 
 ### Technische Highlights & Features
 
-- Wegfindungs-KI: Implementierung von Algorithmen zur Richtungsentscheidung der Geister (z. B. Ziel-Kachel-Berechnung basierend auf Distanzmetriken wie der Manhattan-Distanz).
+- Wegfindungs-KI: Die Wegfindung basiert auf "Schildern" die an den Kreuzungen stehen und
+eine zufällige Auswahl an Wegen, nach Kreuzung, bietet.
 
-- State-Machine: Steuerung der verschiedenen Zustände von Pac-Man und den Geistern (Chase, Scatter, Frightened) mittels einer robusten State-Machine.
+- State-Machine: Steuerung der verschiedenen Zustände von Pac-Man und den Geistern (Chase, Scatter, Frightened).
 
-- Tilemap-System: Effizientes Rendering des Labyrinths durch eine Tilemap, bei der die Map-Daten aus einer Textdatei oder einem Array geladen werden.
+- Tilemap-System: Effizientes Rendering des Labyrinths durch eine Tilemap, bei der die Map-Daten aus einem Array geladen werden.
 
-- Präzise Kollisionslogik: Prüfung von Kollisionen auf Sub-Pixel-Ebene innerhalb des Rasters, um ein flüssiges „Abbiegen“ an Ecken zu ermöglichen (Pre-turn Logic).
-
-- Animations-System: Sprite-Sheet-Animationen für das Öffnen/Schließen des Mundes von Pac-Man sowie die Blickrichtung der Geister.
+- Animations-System: Sprite-Sheet-Animationen für das Öffnen/Schließen des Mundes von Pac-Man.

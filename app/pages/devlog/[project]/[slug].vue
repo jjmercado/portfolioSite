@@ -9,9 +9,9 @@
       <p>Für den Pfad '{{ posts.path }}' konnte leider kein Inhalt gefunden werden.</p>
       <NuxtLink :to="`/devlog`" class="block mt-8">Zurück zur Projektübersicht</NuxtLink>
     </div>
-    <article v-else class="prose lg:prose-xl mx-auto">
+    <article v-else class="prose prose-invert mx-auto">
       <!-- Titel des Devlog-Eintrags -->
-      <h1 class="text-4xl font-bold mb-2">{{ posts.title }}</h1>
+      <h1 class="font-bold mb-2">{{ posts.title }}</h1>
       <p class="text-gray-400 text-sm mb-8">
         Veröffentlicht am: {{ new Date(posts.date).toLocaleDateString() }}
       </p>      
@@ -19,7 +19,9 @@
       <ContentRenderer :value="posts" />
 
     </article>
-    <NuxtLink :to="`/devlog/project/${route.params.project}`" class="block w-fit mx-auto mt-12 rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Zurück zu den Einträgen von {{ route.params.project }} &rarr;</NuxtLink>
+    <NuxtLink :to="`/devlog/project/${route.params.project}`" class="block w-fit mx-auto mt-12 rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+      Zurück zu den Einträgen von {{ route.params.project }}
+    </NuxtLink>
   </main>
   </div>
 </template>
@@ -41,8 +43,5 @@ const { data: posts } = await useAsyncData(route.path, () =>
 </script>
 
 <style scoped>
-/* Füge hier bei Bedarf Stile hinzu, z.B. für die prose-Anpassung */
-.prose pre {
-  overflow-x: auto;
-}
+
 </style>
