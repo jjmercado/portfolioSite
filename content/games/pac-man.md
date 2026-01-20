@@ -32,6 +32,12 @@ Der Spieler steuert Pac-Man durch ein Labyrinth, mit dem Ziel, alle Punkte (Pell
 
 - Warp-Tunnel: Seitliche Ausgänge, die den Spieler sofort auf die gegenüberliegende Seite des Spielfelds transportieren.
 
+### Steuerung
+
+Das Spiel ist für zwei Spieler an einer Tastatur konzipiert:
+
+- Pac-Man: Tasten <kbd>W</kbd> (Hoch), <kbd>S</kbd> (Runter), <kbd>A</kbd> (Links), <kbd>D</kbd> (Rechts)
+
 ### Technische Highlights & Features
 
 - Wegfindungs-KI: Die Wegfindung basiert auf "Schildern" die an den Kreuzungen stehen und
