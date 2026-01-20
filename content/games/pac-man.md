@@ -11,7 +11,7 @@ devtime: 'ca. 3 Monate'
 githubLink: 'https://github.com/jjmercado/Pac-Man'
 buildsystem: 'CMake'
 downloads:
-    windows: '/downloads/crawler_win.zip'
+    windows: '/downloads/PacMan.zip'
     linux: '/downloads/PacMan.tar.gz'
 tags:
     - C++

@@ -11,7 +11,7 @@ devtime: 'ca. 1 Monate'
 githubLink: 'https://github.com/jjmercado/Pong'
 buildsystem: 'CMake'
 downloads:
-    windows: '/downloads/crawler_win.zip'
+    windows: '/downloads/Pong.zip'
     linux: '/downloads/Pong.tar.gz'
 tags:
     - C++
