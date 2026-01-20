@@ -11,7 +11,7 @@ devtime: 'ca. 1 Monate'
 githubLink: 'https://github.com/jjmercado/Asteroids'
 buildsystem: 'CMake'
 downloads:
-    windows: '/downloads/crawler_win.zip'
+    windows: '/downloads/Asteroids.zip'
     linux: '/downloads/Asteroids.tar.gz'
 tags:
     - C++
