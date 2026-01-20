@@ -1,12 +1,12 @@
 <template>
-  <div class=" text-gray-800 dark:text-gray-200 min-h-screen">
+  <div class=" text-gray-200 min-h-screen">
     <div class="container mx-auto p-4 sm:p-6 lg:p-8">
       <div class="max-w-4xl mx-auto p-6 sm:p-8">
 
         <!-- 1. Vorstellung -->
         <section class="mb-10 text-center">
           <NuxtImg src="/application-picture.jpg" alt="Dein Name" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200 dark:border-gray-700"/>
-          <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">
+          <h1 class="text-4xl font-extrabold text-white mb-2">
             Hi! Ich bin Jeremy – Engineer, Familienvater & Game Dev aus Leidenschaft.
           </h1>
           <p>
@@ -19,7 +19,7 @@
         <div class="container mx-auto px-4 py-8">
           <div class="space-y-16">
             <section>
-              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+              <div class="container mx-auto bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-4xl">
                 <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Wer ich bin</h2>
                 <p class="text-lg leading-relaxed">
                   Ich bin Jeremy, 34 Jahre alt, verheiratet und stolzer Vater von zwei Kindern. 
@@ -32,7 +32,7 @@
             </section>
 
             <section>
-              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+              <div class="container mx-auto bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">
                 Mein Weg: Von der Hobelbank zum Quellcode
               </h2>
@@ -77,7 +77,7 @@
             </section>
 
             <section>
-              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+              <div class="container mx-auto bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">
                 Was ich tue, wenn der Rechner glüht
               </h2>
@@ -112,7 +112,7 @@
             </section>
 
             <section>
-              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+              <div class="container mx-auto bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">
                 Warum diese Website? Meine Reise durch die Spieleentwicklung
               </h2>
@@ -151,7 +151,7 @@
             </section>
 
             <section>
-              <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+              <div class="container mx-auto bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-4xl">
               <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Was dich hier erwartet</h2>
               <p>
                 In meinem 

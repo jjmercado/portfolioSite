@@ -14,14 +14,14 @@
       <!-- Titel des Spiels -->
       <article class="mx-auto">
         <!-- Beschreibung des Spiels -->
-        <div class="container bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 content-section my-8 prose prose-invert lg:prose-xl">
+        <div class="container bg-gray-800/50 p-6 rounded-xl border border-gray-700 content-section my-8 prose prose-invert lg:prose-xl">
           <h2 class="font-semibold mb-2 text-center">Über das Spiel</h2>
           <ContentRenderer :value="data" />
         </div>
       </article>
 
         <!-- Technische Details -->
-        <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700 max-w-4xl tech-details my-8 p-4 border rounded-lg">
+        <div class="container mx-auto bg-gray-800/50 border-gray-700 max-w-4xl tech-details my-8 p-4 border rounded-lg">
             <h3 class="text-xl font-semibold mb-2">Technische Details</h3>
             <p><strong>Sprache:</strong> {{ data.meta.language }}</p>
             <p v-if="data.meta.framework"><strong>Framework:</strong> {{ data.meta.framework }}</p>

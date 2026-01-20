@@ -22,7 +22,7 @@
 
 <!-- Ersetze die komplette <section id="about"> -->
 <section id="about" class="pt-16 sm:pt-20">
-  <div class="container mx-auto bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 max-w-4xl">
+  <div class="container mx-auto bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-4xl">
     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Vom Handwerk zum Code: Meine Game-Dev Reise</h2>
     <p class="mt-6 text-lg leading-8 text-slate-300">
       Hi! Ich bin Jeremy. 
@@ -112,7 +112,7 @@
 
 <!-- Ersetze die komplette <section id="contact"> -->
 <section id="contact" class="py-20 sm:py-24 text-center">
-  <div class="container mx-auto px-4 max-w-4xl bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+  <div class="container mx-auto px-4 max-w-4xl bg-gray-800/50 p-6 rounded-xl border border-gray-700">
     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Lass uns vernetzen!</h2>
     <p class="mt-6 text-lg leading-8 text-slate-300">
       Du hast eine Idee für ein gemeinsames Projekt, Feedback zu meinen Spielen oder möchtest dich einfach nur austauschen? Ich freue mich, von dir zu hören.
