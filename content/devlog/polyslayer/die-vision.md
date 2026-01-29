@@ -3,7 +3,7 @@ title: 'Die Vision'
 description: 'Epische Abenteuer für Helden mit wenig Zeit'
 date: '2025-01-29'
 project: 'PolySlayer'
-project_image: '/games/polyslayer/images/placeholder.png' 
+project_image: '/games/polyslayer/images/secondCharacter.png' 
 ---
 
 # Devlog #1: Die Vision – Epische Abenteuer für Helden mit wenig Zeit
