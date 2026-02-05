@@ -12,12 +12,6 @@ project_image: '/games/polyslayer/images/placeholder.png'
 
 ### Die letzten 6 Monate
 
-Das ist ein beeindruckender Weg! Es ist absolut nachvollziehbar, dass dich die politische und technische Richtung von Unity abgeschreckt hat. Der Wechsel zu Godot ist für viele Indie-Entwickler aktuell der "Goldstandard" für Freiheit und Kontrolle.
-
-Hier sind drei verschiedene Varianten, wie du deinen Text formulieren kannst – je nachdem, für welchen Zweck du ihn brauchst (z. B. für einen Blog, ein Portfolio oder einfach als strukturierte Zusammenfassung für dich selbst).
-
----
-
 **Vom Code-Enthusiasten zum Godot-User: Mein 2025 in der Spieleentwicklung**
 
 Eigentlich wollte ich Ende 2025 schon eine fertige Kampf-Demo präsentieren. Spoiler: Hat nicht ganz geklappt – aber aus den besten Gründen!
