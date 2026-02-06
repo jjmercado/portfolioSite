@@ -204,13 +204,25 @@
 </template>
 
 <script setup>
-// Metadaten für die Seite (gut für SEO)
+
+useSeoMeta({
+  title: 'Über mich | Jeremy – Vom Schreiner zum Game Developer',
+  description: 'Lerne Jeremy kennen: Fachinformatiker, Ex-Marine und Game Dev. Erfahre mehr über meinen Weg vom Handwerk in die IT und meine aktuellen Projekte in Godot & C++.',
+  
+  ogTitle: 'Jeremy | Software Engineer & Indie Game Developer',
+  ogDescription: 'Vom Quellcode bis zur 3D-Modellierung: Begleite mich auf meiner Reise durch die Spieleentwicklung und Softwaretechnik.',
+  ogType: 'profile',
+  ogImage: '/portfolioSite/jeremy-profile.png'
+})
+
 useHead({
-  title: 'Über Mich - Jeremy',
-  meta: [
-    { name: 'description', content: 'Erfahre mehr über mich, meine Skills in der Spiele- und Webentwicklung.' }
+  htmlAttrs: {
+    lang: 'de'
+  },
+  link: [
+    { rel: 'canonical', href: 'https://jjmercado.github.io/portfolioSite/about' }
   ]
-});
+})
 </script>
 
 <style scoped>

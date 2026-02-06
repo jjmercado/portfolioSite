@@ -62,7 +62,6 @@
 <script setup>
 import { ref } from 'vue';
 
-// NEUE STRUKTUR für Kompetenzbereiche
 const competencies = ref([
   {
     title: 'Spieleentwicklung',
@@ -129,13 +128,27 @@ const competencies = ref([
   }
 ]);
 
-// Metadaten für die Seite (gut für SEO)
+useSeoMeta({
+  title: 'Skills & Expertise | Jeremy - Game Dev & Webentwicklung',
+  description: 'Übersicht meiner Kompetenzen: Professionelle Spieleentwicklung mit Godot & Unity (C#, GDScript), moderne Webentwicklung mit Nuxt.js & Vue, sowie Erfahrung in Azure DevOps und IT-Security.',
+
+  ogTitle: 'Skills & Tech-Stack von Jeremy',
+  ogDescription: 'Von der Spielmechanik in C# bis zum modernen Web-Frontend in Nuxt. Erfahre mehr über meine Werkzeuge und Projekte.',
+  ogType: 'profile',
+  
+  ogImage: '/portfolioSite/skills-preview.png', 
+  
+  twitterCard: 'summary_large_image',
+})
+
 useHead({
-  title: 'Skills',
-  meta: [
-    { name: 'skills', content: 'Erfahre hier über meine Kompetenzen in der Spiele- und Webentwicklung.' }
+  htmlAttrs: {
+    lang: 'de'
+  },
+  link: [
+    { rel: 'canonical', href: 'https://jjmercado.github.io/portfolioSite/skills' }
   ]
-});
+})
 </script>
 
 <style scoped>

@@ -8,7 +8,20 @@ export default defineNuxtConfig({
     '@nuxt/image'
   ],
   app: {
-    baseURL: '/portfolioSite/'
+    baseURL: '/portfolioSite/',
+    head: {
+      title: 'Jeremy | Game Dev & Software Engineer', // Standard-Titel
+      htmlAttrs: { lang: 'de' },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { 
+          name: 'description', 
+          content: 'Entdecke das Portfolio von Jeremy: Innovative, selbst programmierte Spiele zum Download, detaillierte Devlogs und tiefe Einblicke in meinen Code. Erfahre mehr über meine Skills als Software Engineer!' 
+        }
+      ],
+    }
   },
   content: {
     renderer: {

@@ -40,6 +40,26 @@ const projectNameAsCamelCase = computed(() => {
 const { data: posts } = await useAsyncData(route.path, () => 
   queryCollection(projectNameAsCamelCase.value).path(route.path).first()
 );
+
+useSeoMeta({
+  title: () => `${posts.value?.title} | Jeremys Devlog`,
+  description: () => posts.value?.description,
+  
+  ogTitle: () => posts.value?.title,
+  ogDescription: () => posts.value?.description,
+  ogImage: () => posts.value?.image || '/portfolioSite/default-devlog-share.png',
+  
+  ogType: 'article'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'de'
+  },
+  link: [
+    { rel: 'canonical', href: `https://jjmercado.github.io/portfolioSite/devlog/${posts.value?.meta.project.toLowerCase()}/${posts.value?.title}` }
+  ]
+})
 </script>
 
 <style scoped>

@@ -57,6 +57,25 @@ const games = computed(() => {
     tags: game.meta.tags || [] // Stellt sicher, dass tags immer ein Array ist
   }));
 });
+
+useSeoMeta({
+  title: 'Spiele-Portfolio | C++ & SFML Projekte von Jeremy',
+  description: 'Meine Reise durch die Spieleentwicklung: Von Grund auf programmierte Klassiker wie Pac-Man, Asteroids und Pong in C++ mit SFML. Entdecke Code & Logik hinter den Games.',
+  
+  ogTitle: 'C++ & SFML Game Dev Portfolio - Jeremy',
+  ogDescription: 'Retro-Klassiker neu programmiert: Einblicke in die Engine-Grundlagen, Physik und KI meiner C++ Projekte.',
+  ogImage: '/portfolioSite/games-overview-preview.png', 
+  ogType: 'website'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'de'
+  },
+  link: [
+    { rel: 'canonical', href: 'https://jjmercado.github.io/portfolioSite/games' }
+  ]
+})
 </script>
 
 <style scoped>

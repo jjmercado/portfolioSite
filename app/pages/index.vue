@@ -158,12 +158,23 @@ const { data: latestPosts } = await useAsyncData(`latest-posts-${projectName}`, 
     .all()
 );
 
+useSeoMeta({
+  title: 'Jeremy | Game Dev Portfolio & Software Engineer',
+  description: 'Entdecke das Portfolio von Jeremy: Innovative, selbst programmierte Spiele zum Download, detaillierte Devlogs und tiefe Einblicke in meinen Code. Jetzt Skills & Games entdecken!',
+  ogTitle: 'Jeremy | Game Dev Portfolio',
+  ogDescription: 'Selbst programmierte Spiele, Code-Insights und Devlogs.',
+  ogImage: '/portfolioSite/preview-image.png',
+  ogType: 'website',
+})
+
 useHead({
-  title: 'Home',
-  meta: [
-    { name: 'startpage', content: 'Erfahre hier alles über mich und über meine Kompetenzen in der Spiele- und Webentwicklung.' }
+  htmlAttrs: {
+    lang: 'de'
+  },
+  link: [
+    { rel: 'canonical', href: 'https://jjmercado.github.io/portfolioSite/' }
   ]
-});
+})
 </script>
 
 <style scoped>
