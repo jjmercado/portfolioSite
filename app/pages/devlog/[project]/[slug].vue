@@ -57,7 +57,7 @@ useHead({
     lang: 'de'
   },
   link: [
-    { rel: 'canonical', href: `https://jjmercado.github.io/portfolioSite/devlog/${posts.value?.meta.project.toLowerCase()}/${posts.value?.title}` }
+    { rel: 'canonical', href: `https://jjmercado.github.io/portfolioSite/devlog/${posts.value?.meta.project.toLowerCase()}/${posts.value?.title.toLowerCase()}` }
   ]
 })
 </script>
