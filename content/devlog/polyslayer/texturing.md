@@ -33,7 +33,6 @@ Da ich in diesem Bereich noch viel lerne, wird sich der Prozess in Zukunft siche
 ### Das Ergebnis
 
 Nachdem alle Maps kombiniert wurden, ist hier das fertige Schwert in Blender:
-
    <NuxtImg src="/games/polyslayer/images/texturing/sword_texturing_result.png" alt="sword result"/>
 
 ---
