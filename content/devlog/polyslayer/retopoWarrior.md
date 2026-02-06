@@ -34,3 +34,6 @@ Das fertige Modell ist nun bereit für den nächsten Schritt. Im Vergleich zum m
 
 ---
 
+### Die Rüstung
+Die Rüstung wurde ebenfalls optimiert.
+    <NuxtImg src="/games/polyslayer/images/retopo/armor/retopo_armor.png" alt="Retopo Armor"/>
