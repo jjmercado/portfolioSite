@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Jeremy | Game Dev & Software Engineer', // Standard-Titel
       htmlAttrs: { lang: 'de' },
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/portfolioSite/favicon.ico' }],
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
