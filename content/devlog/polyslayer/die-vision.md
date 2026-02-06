@@ -56,7 +56,7 @@ Der Plan für die nächsten Monate steht fest. Ich verfolge eine klare Kette von
 
 2. Der erste Gegner: Mein Wolf-Modell steht bereits, benötigt aber noch bessere Animationen, damit die Kämpfe später glaubwürdig und dynamisch wirken.
 
-3. Das Kampfsystem: Sobald die Animationen sitzen, widme ich mich dem Herzstück – dem Kampfsystem. Mein großes Ziel ist es, bis Mitte des Jahres eine erste, solide Implementierung des Combat-Systems fertig zu haben.
+3. Das Kampfsystem: Sobald die Texturen und Animationen sitzen, widme ich mich dem Herzstück – dem Kampfsystem. Mein großes Ziel ist es, bis Mitte des Jahres eine erste, solide Implementierung des Combat-Systems fertig zu haben.
 
 Im nächsten Devlog werde ich euch zeigen, was ich bisher visuell erreicht habe und wo ich bereits radikale Änderungen vorgenommen habe, weil mir die erste Version nicht gefallen hat. Ich glaube, dieser Prozess des „Scheiterns und Verbesserns“ gehört zum Game Dev einfach dazu.
 

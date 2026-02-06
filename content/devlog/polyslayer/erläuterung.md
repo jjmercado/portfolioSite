@@ -24,6 +24,6 @@ Die letzten Monate waren ein riesiges Experimentierfeld:
 2. **Leben in der Bude:** Pathfinding für Wölfe und Hasen implementiert.
 3. **Visuals:** Shader-Spielereien und Partikeleffekte für leuchtende Schwerter.
 
-Es hat länger gedauert als geplant, aber das Gelernte ist Gold wert. Sobald die überarbeitenden Modelle fertig sind, in diesem Fall der Warrior und als Gegner entweder ein Wolf oder einen Drachen, sowie die Animationen, bin ich bereit für das Kampfsystem!
+Es hat länger gedauert als geplant, aber das Gelernte ist Gold wert. Sobald die überarbeitenden Modelle fertig sind, in diesem Fall der Warrior und als Gegner entweder ein Wolf oder einen Drachen, sowie die Texturen und Animationen, bin ich bereit für das Kampfsystem!
 
 ---
