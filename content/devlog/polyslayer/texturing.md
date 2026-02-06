@@ -7,32 +7,36 @@ project_image: '/games/polyslayer/images/thirdCharacter.png'
 
 ---
 
-# Devlog #4: Texturierung der Ausrüstung
+# Devlog #4: Texturierung
 
-In diesem Update werfen wir einen Blick auf den Texturierungs-Prozess meiner Assets, am Beispiel des Schwertes. Dies war gleichzeitig ein wichtiger Testlauf für meinen Workflow: Ich experimentiere derzeit noch damit, ob ich die einzelnen Komponenten eines Objekts in einer einzigen **Texture-Atlas** zusammenführe, um die Performance zu optimieren.
+In diesem Update werfen wir einen Blick auf den Texturierungs-Prozess meiner Assets am Beispiel des Schwertes. Dies war gleichzeitig ein wichtiger Testlauf für meinen Workflow: Ich experimentiere derzeit damit, die einzelnen Komponenten eines Objekts in einer **Texture** zusammenzuführen, um die Performance im Spiel zu optimieren.
 
-Da ich in diesem Bereich noch viel lerne, wird sich der Prozess in Zukunft sicher noch verfeinern. Aber um das Projekt optisch voranzutreiben und endlich etwas Farbe ins Spiel zu bringen, habe ich nun den ersten kompletten Durchgang gewagt.
+Da ich in diesem Bereich noch viel lerne, ist dieser Durchgang ein wichtiger Meilenstein, um endlich Farbe und Materialtiefe in die Welt zu bringen.
 
 ### Der Workflow im Detail:
 
-* **UV-Unwrapping:** Zuerst wurden die UVs erstellt, um die 3D-Oberfläche sauber auf eine 2D-Ebene zu projizieren.
-   <NuxtImg src="/games/polyslayer/images/texturing/uv_editing.png" alt="uv unwrapping"/>
+* **UV-Unwrapping:** Zuerst wurden die UVs erstellt, um die 3D-Oberfläche für die Texturierung sauber auf eine 2D-Ebene zu projizieren.
+<NuxtImg src="/games/polyslayer/images/texturing/uv_editing.png" alt="uv unwrapping"/>
 
+* **Learning: Normal Map Baking & Shading:**
+Beim Baking der Normal Map stieß ich auf ein interessantes Problem: Nutzt man **Shade Flat** auf dem Low-Poly-Modell, scheinen die harten Kanten der Polygone durch die Textur (siehe zweites Bild). Da ich jedoch eine glatte, abgerundete Optik erzielen wollte, habe ich das Modell vor dem Baking auf **Shade Smooth** gestellt. Das Ergebnis ist eine saubere Oberfläche ohne sichtbare Face-Kanten – wieder was gelernt!
 
-* **Normal Map Baking:** Um feine Details ohne zusätzliche Polygone darzustellen, habe ich eine Normal Map gebacken.
-   <NuxtImg src="/games/polyslayer/images/texturing/sword_normalmap.png" alt="sword normal map"/>
+*Das Problem (Shade Flat):*
+<NuxtImg src="/games/polyslayer/images/texturing/sword_normal_map.png" alt="sword normal map flat"/>
 
+*Die Lösung (Shade Smooth):*
+<NuxtImg src="/games/polyslayer/images/texturing/sword_normal_map_current.png" alt="sword normal map smooth"/>
 
-* **Color Texture:** Hier wurde die Basis-Farbe (Albedo) festgelegt, um dem Schwert seinen Look zu geben.
-   <NuxtImg src="/games/polyslayer/images/texturing/sword_color.png" alt="sword color texture"/>
+* **Color Texture (Albedo):** Hier wurde die Basis-Farbe festgelegt, um dem Schwert seinen finalen Look und Charakter zu geben.
+<NuxtImg src="/games/polyslayer/images/texturing/sword_color.png" alt="sword color texture"/>
 
-
-* **Metallic & Roughness:** Zum Abschluss wurden die Materialeigenschaften definiert, damit Metall auch wirklich wie Metall glänzt.
-   <NuxtImg src="/games/polyslayer/images/texturing/sword_metal.png" alt="sword metal texture"/>
+* **Metallic & Roughness:** Zum Abschluss wurden die Materialeigenschaften definiert. Diese Maps steuern, wie das Licht reflektiert wird, damit Metall auch wirklich wie Metall glänzt und sich vom Griff absetzt.
+<NuxtImg src="/games/polyslayer/images/texturing/sword_metal.png" alt="sword metal texture"/>
 
 ### Das Ergebnis
 
-Nachdem alle Maps kombiniert wurden, ist hier das fertige Schwert in Blender:
-   <NuxtImg src="/games/polyslayer/images/texturing/sword_texturing_result.png" alt="sword result"/>
+Im folgenden Vergleich sieht man den enormen Unterschied, den eine Normal Map macht. Sie verleiht dem Low-Poly-Modell eine plastische Tiefe, ohne die Performance durch zusätzliche Polygone zu belasten:
+
+<video loop autoplay src="/portfolioSite/games/polyslayer/videos/sword_normalmap_result.mp4">
 
 ---
