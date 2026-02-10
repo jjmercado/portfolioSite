@@ -48,3 +48,16 @@ Hier seht ihr das Schwert und die Rüstung im direkten Vergleich. Achtet darauf,
 
 ### Wie geht es weiter?
 Nachdem die Ausrüstung nun steht, rückt das Rigging und die Animation näher. Bleibt dran für das nächste Update!
+
+⚡ Update: Entscheidung für mehr Flexibilität
+
+Während der Arbeit an den Texturen habe ich mich für eine wichtige Änderung im Workflow entschieden:
+
+Anstatt alle Rüstungsteile fest auf eine einzige, statische Textur-Map zu binden, steuere ich die Teile nun individuell über das Material in der Engine an.
+
+Warum dieser Nachtrag? Ursprünglich war ein festes Farbschema für das Set geplant. Mir wurde jedoch klar, dass dies die Möglichkeiten einschränkt. Durch die Umstellung auf Material-Instanzen habe ich nun die Freiheit, die Farbwerte direkt in der Engine anzupassen.
+
+Das Ziel ist es, euch später im Spiel eine Auswahl an verschiedenen Farbvarianten anzubieten. So könnt ihr eure Ausrüstung aus einem Set an vordefinierten Farben individualisieren – ein Feature, das mit dem alten, statischen Workflow extrem aufwendig umzusetzen gewesen wäre.
+
+Hier seht ihr den Test der verschiedenen Farb-Presets: 
+<video loop autoplay muted playsinline src="/portfolioSite/games/polyslayer/videos/material_color_update.mp4"></video>
