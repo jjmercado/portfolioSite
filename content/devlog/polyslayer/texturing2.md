@@ -1,6 +1,6 @@
 ---
 title: 'Ausrüstungs-Texturing: Die komplette Rüstung im Detail'
-description: 'Devlog #5: Wie wir über 5 Millionen Polygone in 26k Triangles backen – Texturing und Normal Maps bei PolySlayer.'
+description: 'Wie wir über 5 Millionen Polygone in 26k Triangles backen – Texturing und Normal Maps bei PolySlayer.'
 date: '2025-02-06'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/texturing/texturing_result.png' 
@@ -8,7 +8,7 @@ project_image: '/games/polyslayer/images/texturing/texturing_result.png'
 
 # Das Texturing-Update – Die Rüstung ist bereit!
 
-Willkommen zum fünften Devlog von **PolySlayer**. Nachdem wir uns im letzten Schritt mit den Grundformen beschäftigt haben, geht es heute ans Eingemachte: Das komplette **Texturing der Ausrüstung**.
+Willkommen Devlog von **PolySlayer**. Nachdem wir uns im letzten Schritt mit den Grundformen beschäftigt haben, geht es heute ans Eingemachte: Das komplette **Texturing der Ausrüstung**.
 
 In dieser Phase haben wir der gesamten Rüstung ihren finalen Look verliehen. Auch wenn das aktuelle Farbschema bereits gut funktioniert, halten wir uns die Option offen, die Farben im späteren Polishing-Prozess noch einmal feinabzustimmen, um sie perfekt an die Spielwelt anzupassen.
 
