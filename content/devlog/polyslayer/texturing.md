@@ -1,13 +1,12 @@
 ---
-title: 'Texturing'
-description: 'Texturing der Ausrüstung'
+title: 'Ausrüstungs-Texturing: Der erste Look für unseren Helden'
+description: 'Von grauen Modellen zu lebendigen Helden: Ein Blick auf das Texturing der Rüstung und den Einsatz von Normal Maps in PolySlayer.'
 date: '2025-02-05'
 project: 'PolySlayer'
-project_image: '/games/polyslayer/images/thirdCharacter.png' 
-
+project_image: '/games/polyslayer/images/texturing_result.png' 
 ---
 
-# Devlog #4: Texturierung
+# Rüstungs-Texturing – Details, die den Unterschied machen
 
 In diesem Update werfen wir einen Blick auf den Texturierungs-Prozess meiner Assets am Beispiel des Schwertes. Dies war gleichzeitig ein wichtiger Testlauf für meinen Workflow: Ich experimentiere derzeit damit, die einzelnen Komponenten eines Objekts in einer **Texture** zusammenzuführen, um die Performance im Spiel zu optimieren.
 

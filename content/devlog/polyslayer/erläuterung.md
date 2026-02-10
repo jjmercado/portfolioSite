@@ -1,6 +1,6 @@
 ---
-title: 'Erläuterung'
-description: 'Was ist in den letzten 6 Monaten passiert'
+title: 'Halbzeit-Update: 6 Monate PolySlayer Development-Reise'
+description: 'Hinter den Kulissen: Was ist in den letzten 6 Monaten bei PolySlayer passiert? Hürden, Siege und technischer Fortschritt.'
 date: '2025-01-31'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/placeholder.png' 

@@ -1,12 +1,12 @@
 ---
-title: 'Status-Quo'
-description: 'Ein kleiner Eindruck was bereits geschaffen wurde'
+title: 'PolySlayer Status-Quo: Der aktuelle Stand unserer Spieleentwicklung'
+description: 'Ein exklusiver Einblick in die bisherigen Meilensteine von PolySlayer. Was wir bereits erreicht haben und woran wir arbeiten.'
 date: '2025-01-30'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/placeholder.png' 
 ---
 
-# Devlog #2: Ein Vergleich 
+# Status-Quo: Was bisher geschah
 
 ---
 

@@ -10,7 +10,7 @@
          ring-1 ring-purple-500 
          md:ring-white/10 md:hover:ring-purple-500">
           <h2>{{ post.title }}</h2>
-          <p>{{ post.description }}</p>
+          <!--<p>{{ post.description }}</p>-->
           <small>{{ new Date(post.date).toLocaleDateString() }}</small>
         </NuxtLink>
       </li>

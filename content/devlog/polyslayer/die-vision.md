@@ -1,12 +1,12 @@
 ---
-title: 'Die Vision'
-description: 'Epische Abenteuer für Helden mit wenig Zeit'
+title: 'Die Vision hinter PolySlayer: Epische Abenteuer für Helden mit wenig Zeit'
+description: 'Warum PolySlayer das perfekte RPG für zwischendurch ist. Unsere Vision von kompaktem, aber epischem Gameplay.'
 date: '2025-01-29'
 project: 'PolySlayer'
-project_image: '/games/polyslayer/images/thirdCharacter.png' 
+project_image: '/games/polyslayer/images/texturing/texturing_result.png'
 ---
 
-# Devlog #1: Die Vision – Epische Abenteuer für Helden mit wenig Zeit
+# Die Vision – Epische Abenteuer für Helden mit wenig Zeit
 
 Hallo zusammen!
 

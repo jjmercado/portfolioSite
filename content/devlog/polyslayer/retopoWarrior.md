@@ -1,12 +1,12 @@
 ---
-title: 'Warrior Retopo'
-description: 'Der Prozess der Retopology: Optimierung des Hauptcharakters für maximale Performance.'
+title: 'Warrior Retopology: Performance-Optimierung für flüssiges Gameplay'
+description: 'So optimieren wir unseren Hauptcharakter. Erfahren Sie mehr über Retopology und effizientes Character Design in PolySlayer.'
 date: '2025-02-04'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/thirdCharacter.png' 
 ---
 
-# Devlog #4: Das Retopology des Hauptcharakters
+# Warrior Retopo: Schönheit trifft Performance
 
 Nachdem das High-Poly-Sculpting abgeschlossen ist, stand in den letzten Tagen ein entscheidender Schritt an: das **Retopology**. Ziel war es, die Millionen von Polygonen in ein sauberes, performantes Mesh zu verwandeln, das bereit für Rigging und Animationen in Blender ist.
 
