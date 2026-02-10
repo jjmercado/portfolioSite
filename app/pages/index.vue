@@ -118,7 +118,7 @@
       Du hast eine Idee für ein gemeinsames Projekt, Feedback zu meinen Spielen oder möchtest dich einfach nur austauschen? Ich freue mich, von dir zu hören.
     </p>
     <div class="mt-10">
-      <a href="mailto:astralanvil@outlook.de" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105">
+      <a href="mailto:astralanvil@gmail.com" class="rounded-md bg-purple-600 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-purple-600/20 transition-all duration-300 hover:bg-purple-500 hover:scale-105">
         Schreib mir eine E-Mail
       </a>
     </div>
