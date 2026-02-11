@@ -39,6 +39,9 @@ Da PolySlayer verschiedene Rüstungsteile unterstützt, habe ich das Standard-Ri
 
 * **Helm-Socket**
 * **Waffen-Socket**
+* **Schulter-Socket**
+* **Schuhe-Socket**
+* **Beine-Socket**
 * **Brust- & Handschuh-Sockets**
 
 Dadurch können wir Rüstungsteile später im Spiel dynamisch austauschen, während sie perfekt an der Bewegung des Skeletts haften.
