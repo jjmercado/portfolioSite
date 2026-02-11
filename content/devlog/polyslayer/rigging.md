@@ -18,7 +18,7 @@ Da unser Charakter einen stilisierten Look hat und wir keine komplexen Mimiken b
 - <NuxtImg src="/games/polyslayer/images/rigging/rig_face_del.png" alt="Deleted Face Bones"/>
 
 > **Pro-Tipp (Troubleshooting):** Achtet darauf, wirklich alle Face-Bones zu erwischen! Oft versteckt sich ein winziger Bone im Kopf-Bereich. Wenn dieser bleibt, wirft Rigify beim Generieren oder Upgraden des Rigs eine Fehlermeldung aus.
-<NuxtImg src="/games/polyslayer/images/rigging/error_when_not_upgrade_face.png" alt="Error Message"/>
+- <NuxtImg src="/games/polyslayer/images/rigging/error_when_not_upgrade_face.png" alt="Error Message"/>
 
 - <NuxtImg src="/games/polyslayer/images/rigging/hidden_face_bone.png" alt="Hidden Face Bone"/>
 
