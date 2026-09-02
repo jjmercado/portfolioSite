@@ -132,18 +132,8 @@
                   </li>
                   <li>
                     <p>
-                      <span class="font-semibold">Der Unity-Abbruch:</span> 
-                      Ich wollte meine Projekte in Unity umsetzen, da ich Unity am besten 
-                      kannte und für meine Projekte 
-                      genau das richtige Tool war, aber die Firmenpolitik 
-                      und der Umgang mit der Community haben mich dazu bewegt, Unity den Rücken zu kehren.                  
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <span class="font-semibold">Ankunft bei Godot:</span> 
-                      Seit über einem halben Jahr arbeite ich nun intensiv in meiner Freizeit an meinem 
-                      ersten 3D-Spiel in Godot.
+                      <span class="font-semibold">Fokus auf Game Engines:</span> 
+                      Auch wenn mich die Low-Level-Entwicklung in C++ reizt, steht für mich aktuell im Vordergrund, mit einer modernen Game Engine effizient ein fertiges Spiel auf den Markt zu bringen. Sollten später Zeit und Ressourcen da sein, schließe ich eine eigene C++-Engine keineswegs aus – doch jetzt gilt der volle Fokus dem Gameplay, Content und einem erfolgreichen Release.
                     </p>
                   </li>
                 </ul>
@@ -207,7 +197,7 @@
 
 useSeoMeta({
   title: 'Über mich | Jeremy – Vom Schreiner zum Game Developer',
-  description: 'Lerne Jeremy kennen: Fachinformatiker, Ex-Marine und Game Dev. Erfahre mehr über meinen Weg vom Handwerk in die IT und meine aktuellen Projekte in Godot & C++.',
+  description: 'Lerne Jeremy kennen: Fachinformatiker, Ex-Marine und Game Dev. Erfahre mehr über meinen Weg vom Handwerk in die IT und meine aktuellen Projekte im Bereich Game Development & C++.',
   
   ogTitle: 'Jeremy | Software Engineer & Indie Game Developer',
   ogDescription: 'Vom Quellcode bis zur 3D-Modellierung: Begleite mich auf meiner Reise durch die Spieleentwicklung und Softwaretechnik.',

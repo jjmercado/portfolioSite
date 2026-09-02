@@ -10,13 +10,11 @@ project_image: '/games/polyslayer/images/placeholder.png'
 
 ---
 
-### Die letzten 6 Monate
-
-**Vom Code-Enthusiasten zum Godot-User: Mein 2025 in der Spieleentwicklung**
+**Fokus auf Gameplay & Engine-Workflows: Mein Weg in der Spieleentwicklung**
 
 Eigentlich wollte ich Ende 2025 schon eine fertige Kampf-Demo präsentieren. Spoiler: Hat nicht ganz geklappt – aber aus den besten Gründen!
 
-Nachdem mir Unity mit ihrem "Cloud-Zwang" und der unsicheren Preispolitik den letzten Nerv geraubt hat, bin ich komplett auf Godot umgestiegen. Ja, ich liebe C++ und hätte fast alles selbst programmiert, aber ich will ein Spiel fertigstellen und keine Engine-Entwicklungs-Odyssee starten.
+Klar reizt mich die Low-Level-Entwicklung in C++, aber mein primäres Ziel ist es jetzt, mit einer modernen Engine ein fertiges Spiel auf den Markt zu bringen – statt mich in einer endlosen Engine-Entwicklungs-Odyssee zu verlieren. Wenn das Projekt gut läuft und eines Tages mehr Zeit und Budget da sind, kann man immer noch tiefer in Custom-C++-Engines eintauchen. Aktuell gilt der volle Fokus dem Gameplay, funktionierenden Workflows und dem Release!
 
 Die letzten Monate waren ein riesiges Experimentierfeld:
 
