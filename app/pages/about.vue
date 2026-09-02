@@ -90,8 +90,10 @@
                 <ul class="list-disc list-outside ml-6"> 
                   <li>
                     <p>
-                      <span class="font-semibold">Softwareentwicklung:</span>
-                      Mein Fokus liegt auf Spielen, aber ich baue auch gerne Websites (wie diese hier!).
+                      <span class="font-semibold">Software- & Game Dev:</span>
+                      Mein Fokus liegt ganz klar auf der Spieleentwicklung. Webtechnologien nutze ich vor allem 
+                      pragmatisch als Werkzeug – sei es für gezielte Lernprojekte oder um meine Arbeiten 
+                      (wie auf dieser Portfolio-Seite) greifbar zu präsentieren.
                     </p>
                   </li>
                   <li>
@@ -133,7 +135,11 @@
                   <li>
                     <p>
                       <span class="font-semibold">Fokus auf Game Engines:</span> 
-                      Auch wenn mich die Low-Level-Entwicklung in C++ reizt, steht für mich aktuell im Vordergrund, mit einer modernen Game Engine effizient ein fertiges Spiel auf den Markt zu bringen. Sollten später Zeit und Ressourcen da sein, schließe ich eine eigene C++-Engine keineswegs aus – doch jetzt gilt der volle Fokus dem Gameplay, Content und einem erfolgreichen Release.
+                      Auch wenn mich die Low-Level-Entwicklung in C++ reizt, steht für mich aktuell im Vordergrund, 
+                      mit einer modernen Game Engine effizient ein fertiges Spiel auf den Markt zu bringen. 
+                      Sollten später Zeit und Ressourcen da sein, 
+                      schließe ich eine eigene C++-Engine keineswegs aus – 
+                      doch jetzt gilt der volle Fokus dem Gameplay, Content und einem erfolgreichen Release.
                     </p>
                   </li>
                 </ul>
