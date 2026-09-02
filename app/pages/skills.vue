@@ -3,7 +3,10 @@
     <div class="container mx-auto p-4 sm:p-6 lg:p-8">
       <div class="max-w-4xl mx-auto p-6 sm:p-8">
         <section class="mb-10">
-          <h2 class="text-3xl font-bold text-white mb-8 border-b-2 border-blue-500 pb-2">Meine Skills</h2>
+          <h2 class="text-3xl font-bold text-white mb-4 border-b-2 border-blue-500 pb-2">Meine Skills</h2>
+          <p class="text-gray-300 text-lg leading-relaxed mb-8">
+            Ich bin vielseitig interessiert und ein echter Wissensjunkie: Ich beschäftige mich gerne mit unterschiedlichen Bereichen der Software- und Spieleentwicklung – von Game Engines und 3D-Modellierung über Low-Level-Konzepte bis hin zu Webtechnologien. Auch wenn ich bei weitem nicht in jedem dieser Tools und Themen ein ausgemachter Experte bin, liebe ich es, Zusammenhänge zu verstehen, Neues auszuprobieren und mich pragmatisch in komplexe Workflows einzuarbeiten.
+          </p>
           <div class="space-y-12">
             
             <!-- Iteration durch die Hauptbereiche -->
@@ -65,10 +68,10 @@ import { ref } from 'vue';
 const competencies = ref([
   {
     title: 'Spieleentwicklung',
-    level: 'Hauptfokus & Expertise',
+    level: 'Hauptfokus & Leidenschaft',
     description: 'Meine größte Leidenschaft. Ich konzipiere und entwickle sowohl 2D- als auch 3D-Spiele, vom ersten Prototyp bis zum fertigen Produkt.',
     toolCategories: [
-      { name: 'Game Engines', tools: ['Godot', 'Unity', 'Unreal (Grundlagen)'] },
+      { name: 'Game Engines', tools: ['Godot', 'Unity', 'Unreal'] },
       { name: 'Sprachen & Bibliotheken', tools: ['GDScript', 'C#', 'C++', 'SFML'] },
       { name: 'Asset-Erstellung', tools: ['Blender (3D-Modellierung)', 'Inkscape'] },
       { name: 'Allgemeine Werkzeuge', tools: ['VS Community', 'VS Code', 'Git', 'GitHub', 'CMake'] },
@@ -104,7 +107,7 @@ const competencies = ref([
       },
       { 
         name: 'Entwicklung & Infrastruktur', 
-        tools: ['Visual Studio Professional','GitLab', 'Team Foundation', 'Azure (Grundlagen)', 'Windows'] 
+        tools: ['Visual Studio Professional','GitLab', 'Team Foundation', 'Azure', 'Windows'] 
       },
       { 
         name: 'Automatisierung', 
