@@ -35,29 +35,18 @@ Der rote Faden des Spiels ist das Prinzip **„High Risk, High Reward“**. Ich 
 
 ### Der Weg der ersten 6 Monate: Lernen und Aufbauen
 
-Da ich dieses Projekt in meiner Freizeit entwickle, war das letzte halbe Jahr eine Reise voller steiler Lernkurven. Ich habe mich intensiv in die **Godot Engine** und **GDScript** eingearbeitet und musste mir viele Workflows erst komplett neu erschließen.
+Da ich dieses Projekt in meiner Freizeit entwickle, war das letzte halbe Jahr eine Reise voller steiler Lernkurven. Ich habe mich intensiv in die Engine-Workflows eingearbeitet und musste mir viele Pipelines erst komplett neu erschließen.
 
 **Was hinter den Kulissen passiert ist:**
 
-* **Pipeline-Entwicklung:** Ich habe gelernt, wie ich 3D-Modelle erstelle, sie animiere und sauber in Godot implementiere – ein Bereich, mit dem ich vorher kaum Kontakt hatte.
+* **Pipeline-Entwicklung:** Ich habe gelernt, wie ich 3D-Modelle erstelle, sie animiere und sauber in die Engine implementiere – ein Bereich, mit dem ich vorher kaum Kontakt hatte.
 * **Engine-Systeme:** Von der ersten Test-KI für Monster über das Pathfinding bis hin zu Experimenten mit Shadern und Partikel-Systemen (für die flammenden Schwerter!) habe ich das Fundament gelegt.
 * **Die Welt entsteht:** Ein kleines, stimmungsvolles Dorf als erster Ankerpunkt ist bereits fertiggestellt.
 
-**Aktueller Stand:**
-Momentan befinde ich mich in einer Phase der Verfeinerung. Ich überarbeite aktuell den **Krieger-Hauptcharakter** komplett. Die erste Version hat mir spielerisch noch nicht gefallen – und da das Spielgefühl („Game Feel“) das Herzstück eines Action-RPGs ist, nehme ich mir hier die Zeit, es richtig zu machen, bevor ich den Magier an gehe.
-
 ---
 
-### Wie geht es weiter? (Roadmap)
+### Fazit & Ausblick
 
-Der Plan für die nächsten Monate steht fest. Ich verfolge eine klare Kette von Schritten, um das Spielgefühl auf das nächste Level zu heben:
-
-1. Charakter-Feinschliff: Nachdem ich das Modell des Kriegers überarbeitet habe, erstelle ich aktuell die visuelle Repräsentation. Ich teste verschiedene Posen und Details in voller Farbe, um sicherzustellen, dass der Look genau die Wucht ausstrahlt, die ich mir vorstelle. Danach folgen die finalen Animationen.
-
-2. Der erste Gegner: Mein Wolf-Modell steht bereits, benötigt aber noch bessere Animationen, damit die Kämpfe später glaubwürdig und dynamisch wirken.
-
-3. Das Kampfsystem: Sobald die Texturen und Animationen sitzen, widme ich mich dem Herzstück – dem Kampfsystem. Mein großes Ziel ist es, bis Mitte des Jahres eine erste, solide Implementierung des Combat-Systems fertig zu haben.
-
-Im nächsten Devlog werde ich euch zeigen, was ich bisher visuell erreicht habe und wo ich bereits radikale Änderungen vorgenommen habe, weil mir die erste Version nicht gefallen hat. Ich glaube, dieser Prozess des „Scheiterns und Verbesserns“ gehört zum Game Dev einfach dazu.
+In den folgenden Devlogs nehme ich euch mit auf diese Reise und zeige euch die Entstehung der einzelnen Bausteine – von der Charakterentwicklung und Animationen über Texturen bis hin zu Gameplay-Mechaniken. Ich glaube, dieser Prozess des Ausprobierens, Lernens und kontinuierlichen Verbesserns gehört zum Game Dev einfach dazu!
 
 ---
