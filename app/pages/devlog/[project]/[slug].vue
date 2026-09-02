@@ -37,7 +37,7 @@ const projectNameAsCamelCase = computed(() => {
 });
 
 // Lade nur die Posts für das ausgewählte Projekt
-const { data: posts } = await useAsyncData(route.path, () => 
+const { data: posts, pending, error } = await useAsyncData(route.path, () => 
   queryCollection(projectNameAsCamelCase.value).path(route.path).first()
 );
 

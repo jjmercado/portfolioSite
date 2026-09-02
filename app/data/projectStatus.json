@@ -1,0 +1,58 @@
+{
+  "projectName": "Blackbird",
+  "projectType": "3D Action-RPG (Indie)",
+  "statusLabel": "Aktiv in Entwicklung",
+  "currentFocus": "3D-Animationen, Rigging-Optimierung und Vorbereitung der Animation State Machine",
+  "lastUpdated": "März 2026",
+  "devlogSlug": "blackbird",
+  "milestones": [
+    {
+      "id": 1,
+      "title": "High-Poly Sculpting & Retopology (Warrior)",
+      "description": "Erstellung des Hauptcharakters und Optimierung für Echtzeit-Rendering.",
+      "status": "done"
+    },
+    {
+      "id": 2,
+      "title": "Rüstungs-Texturing & Normal Map Baking",
+      "description": "Texturierung der Ausrüstung mit Normal Maps und dynamischen Materialfarben.",
+      "status": "done"
+    },
+    {
+      "id": 3,
+      "title": "Rigging & Weight Painting mit Blender Rigify",
+      "description": "Erstellung des Humanoid-Skeletts mit modularen Sockets für Waffen & Rüstungen.",
+      "status": "done"
+    },
+    {
+      "id": 4,
+      "title": "Basis-Animationen (Walk, Run, Blocking, Combat-Posen)",
+      "description": "Iterativer Aufbau der Schlüssel-Posen und flüssiger Bewegungsabläufe.",
+      "status": "done"
+    },
+    {
+      "id": 5,
+      "title": "Gegner-Modellierung (Wolf/Drache) & Gegner-Animationen",
+      "description": "Erstellung und Animation der ersten Gegner für die Spielwelt.",
+      "status": "in_progress"
+    },
+    {
+      "id": 6,
+      "title": "Engine-Import & Animation State Machine",
+      "description": "Nahtlose Übergänge zwischen Idle, Bewegung und Kampfanimationen.",
+      "status": "in_progress"
+    },
+    {
+      "id": 7,
+      "title": "Hitboxen, Schadenslogik & Combat-Prototyp",
+      "description": "Reaktives Trefferfeedback und Implementierung des Kampfsystems.",
+      "status": "planned"
+    },
+    {
+      "id": 8,
+      "title": "Erste spielbare Kampf-Demo",
+      "description": "Vollständig spielbarer Test-Build mit erstem Dungeon- / Arena-Kampf.",
+      "status": "planned"
+    }
+  ]
+}

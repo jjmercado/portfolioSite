@@ -28,7 +28,7 @@
       Hi! Ich bin Jeremy. 
       Früher habe ich als Schreiner Möbel gebaut und war acht Jahre bei der Marine – heute bin ich Test-Engineer
       und leidenschaftlicher Spieleentwickler. 
-      Auf dieser Seite dokumentiere ich meinen Weg in der <span class="text-1xl font-semibold text-purple-400">Godot Engine</span>, 
+      Auf dieser Seite dokumentiere ich meinen Weg in der <span class="text-1xl font-semibold text-purple-400">Spieleentwicklung</span>, 
       teile meine Workflows in der <span class="text-1xl font-semibold text-purple-400">3D-Modellierung</span> und schreibe über alles, was mich technisch begeistert.
 
       Aktuell im Fokus: Mein erstes eigenes 3D-Spiel, an dem ich nach Feierabend schraube. 
