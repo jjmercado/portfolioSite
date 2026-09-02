@@ -8,11 +8,11 @@ export default defineContentConfig({
       // Load every file inside the `content` directory
       source: 'devlog/**'
     }),
-    polyslayer: defineCollection({
+    blackbird: defineCollection({
       // Specify the type of content in this collection
       type: 'page',
       // Load every file inside the `content` directory
-      source: 'devlog/polyslayer/*.md',      
+      source: 'devlog/blackbird/*.md',      
       schema: z.object({
         date: z.date()
       })

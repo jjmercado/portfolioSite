@@ -1,9 +1,9 @@
 ---
 title: 'Weight Painting & Skinning: Wenn Metall auf Bewegung trifft'
-description: 'So meistern wir das Weight Painting in PolySlayer. Über Knautschzonen, starre Rüstungsteile und den korrekten Export für Sockets.'
+description: 'So meistern wir das Weight Painting in Blackbird. Über Knautschzonen, starre Rüstungsteile und den korrekten Export für Sockets.'
 date: '2026-02-10'
-project: 'PolySlayer'
-project_image: '/games/polyslayer/images/weightpainting_progress.png' 
+project: 'Blackbird'
+project_image: '/games/blackbird/images/weightpainting_progress.png' 
 ---
 
 # Weight Painting – Stabilität trifft Flexibilität
@@ -18,8 +18,8 @@ Bei anderen Teilen schauen wir genau hin:
 * **Stiefel & Handschuhe:** Diese müssen stabil wirken, aber an den Gelenken genug Flexibilität besitzen.
 * **Brust & Beine:** Hier definieren wir bewusste "Knautschzonen". Es muss nicht physikalisch 100% korrekt sein, aber es muss im Spielverlauf glaubwürdig aussehen.
 
-- <NuxtImg src="/games/polyslayer/images/weightpainting/helmet_socket_weightpaint.png" alt="Helmet not weightpainted"/>
-- <NuxtImg src="/games/polyslayer/images/weightpainting/helmet_weightpainted.png" alt="Helmet weightpainted"/>
+- <NuxtImg src="/games/blackbird/images/weightpainting/helmet_socket_weightpaint.png" alt="Helmet not weightpainted"/>
+- <NuxtImg src="/games/blackbird/images/weightpainting/helmet_weightpainted.png" alt="Helmet weightpainted"/>
 
 ---
 
@@ -40,10 +40,10 @@ Mein Workflow ist hier zyklisch:
 2. **Test-Animation** (Angriff, Laufen, Idle)
 3. **Fehlerkorrektur:** Sobald in einer extremen Pose das Mesh unschön ineinander schiebt, kehre ich zum Weight Painting zurück und korrigiere die Einflüsse.
 
-- <NuxtImg src="/games/polyslayer/images/weightpainting/test_pose_wp.png" alt="Test Pose"/>
-- <NuxtImg src="/games/polyslayer/images/weightpainting/test_pose_wp_shaded.png" alt="Test Pose Shaded"/>
+- <NuxtImg src="/games/blackbird/images/weightpainting/test_pose_wp.png" alt="Test Pose"/>
+- <NuxtImg src="/games/blackbird/images/weightpainting/test_pose_wp_shaded.png" alt="Test Pose Shaded"/>
 
 ---
 
 ### Wie geht es weiter?
-Das Mesh folgt nun sauber dem Rig. Als Nächstes tauchen wir voll in die **Animation** ein, um PolySlayer seinen ganz eigenen Charakter zu verleihen!
+Das Mesh folgt nun sauber dem Rig. Als Nächstes tauchen wir voll in die **Animation** ein, um Blackbird seinen ganz eigenen Charakter zu verleihen!

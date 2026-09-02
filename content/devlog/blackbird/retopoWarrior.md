@@ -1,9 +1,9 @@
 ---
 title: 'Warrior Retopology: Performance-Optimierung für flüssiges Gameplay'
-description: 'So optimieren wir unseren Hauptcharakter. Erfahren Sie mehr über Retopology und effizientes Character Design in PolySlayer.'
+description: 'So optimieren wir unseren Hauptcharakter. Erfahren Sie mehr über Retopology und effizientes Character Design in Blackbird.'
 date: '2026-02-04'
-project: 'PolySlayer'
-project_image: '/games/polyslayer/images/thirdCharacter.png' 
+project: 'Blackbird'
+project_image: '/games/blackbird/images/thirdCharacter.png' 
 ---
 
 # Warrior Retopo: Schönheit trifft Performance
@@ -12,28 +12,28 @@ Nachdem das High-Poly-Sculpting abgeschlossen ist, stand in den letzten Tagen ei
 
 ### Der Fokus auf die Details
 Begonnen habe ich mit den komplexesten Bereichen. Da ich den Prozess von vielen Vertices zu weniger einfacher finde, habe ich mit den **Ohren, der Nase und dem restlichen Kopf** gestartet, um einen sauberen Edge-Flow zu garantieren.
-    <NuxtImg src="/games/polyslayer/images/retopo/char/mainChar_retopo_1.png" alt="Retopo Char Ears"/>
+    <NuxtImg src="/games/blackbird/images/retopo/char/mainChar_retopo_1.png" alt="Retopo Char Ears"/>
 
 ---
 
 ### Von den Extremitäten zum Core
 Nach dem Kopf folgte der Hals als Übergang zum Torso. Ein weiterer kritischer Punkt waren die **Hände**. Da der Warrior später sein Schwert fest im Griff haben muss, ist hier eine präzise Topologie wichtig, um unschöne Verformungen beim Greifen zu vermeiden.
-    <NuxtImg src="/games/polyslayer/images/retopo/char/mainChar_retopo_2.png" alt="Retopo Char Hands"/>
+    <NuxtImg src="/games/blackbird/images/retopo/char/mainChar_retopo_2.png" alt="Retopo Char Hands"/>
 
 ---
 
 ### Den Körper schließen
 Vom Oberkörper aus habe ich das Mesh nach unten hin vervollständigt und schließlich auf die Beine aufgesplittet. Hier lag der Fokus besonders auf den Gelenken (Knie und Hüfte), um genügend "Loops" für saubere Deformationen beim Laufen und Kämpfen zu haben.
-    <NuxtImg src="/games/polyslayer/images/retopo/char/mainChar_retopo_3.png" alt="Retopo Char Body"/>
+    <NuxtImg src="/games/blackbird/images/retopo/char/mainChar_retopo_3.png" alt="Retopo Char Body"/>
 
 ---
 
 ### Das Ergebnis
 Das fertige Modell ist nun bereit für den nächsten Schritt. Im Vergleich zum massiven Sculpting-Modell ist es jetzt leichtgewichtig und perfekt für die Echtzeit-Berechnung optimiert.
-    <video loop autoplay src="/portfolioSite/games/polyslayer/videos/finishedRetopoMainChar.mp4">
+    <video loop autoplay src="/portfolioSite/games/blackbird/videos/finishedRetopoMainChar.mp4">
 
 ---
 
 ### Die Rüstung
 Die Rüstung wurde ebenfalls optimiert.
-    <NuxtImg src="/games/polyslayer/images/retopo/armor/retopo_armor.png" alt="Retopo Armor"/>
+    <NuxtImg src="/games/blackbird/images/retopo/armor/retopo_armor.png" alt="Retopo Armor"/>

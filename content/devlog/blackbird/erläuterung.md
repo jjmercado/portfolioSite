@@ -1,9 +1,9 @@
 ---
-title: 'Halbzeit-Update: 6 Monate PolySlayer Development-Reise'
-description: 'Hinter den Kulissen: Was ist in den letzten 6 Monaten bei PolySlayer passiert? Hürden, Siege und technischer Fortschritt.'
+title: 'Halbzeit-Update: 6 Monate Blackbird Development-Reise'
+description: 'Hinter den Kulissen: Was ist in den letzten 6 Monaten bei Blackbird passiert? Hürden, Siege und technischer Fortschritt.'
 date: '2026-01-31'
-project: 'PolySlayer'
-project_image: '/games/polyslayer/images/placeholder.png' 
+project: 'Blackbird'
+project_image: '/games/blackbird/images/placeholder.png' 
 ---
 
 # Devlog #3: Was ist alles passiert 

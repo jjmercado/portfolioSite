@@ -149,7 +149,7 @@ const games = computed(() => {
   }));
 });
 
-const projectName = 'polyslayer';
+const projectName = 'blackbird';
 
 const { data: latestPosts } = await useAsyncData(`latest-posts-${projectName}`, () => 
   queryCollection(projectName)

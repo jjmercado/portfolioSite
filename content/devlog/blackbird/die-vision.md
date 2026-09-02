@@ -1,9 +1,9 @@
 ---
-title: 'Die Vision hinter PolySlayer: Epische Abenteuer für Helden mit wenig Zeit'
-description: 'Warum PolySlayer das perfekte RPG für zwischendurch ist. Unsere Vision von kompaktem, aber epischem Gameplay.'
+title: 'Die Vision hinter Blackbird: Epische Abenteuer für Helden mit wenig Zeit'
+description: 'Warum Blackbird das perfekte RPG für zwischendurch ist. Unsere Vision von kompaktem, aber epischem Gameplay.'
 date: '2026-01-29'
-project: 'PolySlayer'
-project_image: '/games/polyslayer/images/weightpainting/test_pose_wp_shaded.png'
+project: 'Blackbird'
+project_image: '/games/blackbird/images/weightpainting/test_pose_wp_shaded.png'
 ---
 
 # Die Vision – Epische Abenteuer für Helden mit wenig Zeit

@@ -1,9 +1,9 @@
 ---
 title: 'Vom Blockout zum Game-Ready: Der Animations-Workflow'
-description: 'Wie die Animationen für PolySlayer entstehen. Ein Einblick in den iterativen Prozess vom groben Timing bis zum finalen Schliff.'
+description: 'Wie die Animationen für Blackbird entstehen. Ein Einblick in den iterativen Prozess vom groben Timing bis zum finalen Schliff.'
 date: '2026-02-14'
-project: 'PolySlayer'
-project_image: '/games/polyslayer/images/weightpainting/test_pose_wp_shaded.png'
+project: 'Blackbird'
+project_image: '/games/blackbird/images/weightpainting/test_pose_wp_shaded.png'
 ---
 
 # Animationen – Schritt für Schritt zum flüssigen Gameplay
@@ -12,15 +12,15 @@ Nachdem das Rigging und Weight Painting abgeschlossen sind, hauchen wir unserem 
 
 # Ausgangspose
 
-- <NuxtImg src="/games/polyslayer/images/animation/walkAnim_StartPoint.png" alt="Ausgangspose"/>
+- <NuxtImg src="/games/blackbird/images/animation/walkAnim_StartPoint.png" alt="Ausgangspose"/>
 
 ## Phase 1: Die grobe Animation (Blocking)
 
 Zuerst erstelle ich eine sehr einfache Version der Bewegung. Hier geht es noch nicht um flüssige Übergänge, sondern rein um das **Timing** und die **Key-Posen**. Sitzt der Schwung des Schwertes?
 
-- <NuxtImg src="/games/polyslayer/images/animation/blockingAnim.png" alt="Test Pose"/>
+- <NuxtImg src="/games/blackbird/images/animation/blockingAnim.png" alt="Test Pose"/>
 
-- <video loop autoplay muted playsinline src="/portfolioSite/games/polyslayer/videos/animation/blockingAnim.mp4"></video>
+- <video loop autoplay muted playsinline src="/portfolioSite/games/blackbird/videos/animation/blockingAnim.mp4"></video>
 
 ---
 
@@ -28,9 +28,9 @@ Zuerst erstelle ich eine sehr einfache Version der Bewegung. Hier geht es noch n
 
 Sobald das Grundgerüst steht, werde ich kleinteiliger. Ich füge Zwischenschritte (In-Betweens) hinzu, achte auf die Kurven der Bewegungen (Graph Editor) und stelle sicher, dass der Körper etwas in die Knie geht. Hier bekommt die Animation ihre erste richtige Dynamik.
 
-- <NuxtImg src="/games/polyslayer/images/animation/bitMorePreciseWalkAnim.png" alt="Better In-Betweens"/>
+- <NuxtImg src="/games/blackbird/images/animation/bitMorePreciseWalkAnim.png" alt="Better In-Betweens"/>
 
-<video loop autoplay muted playsinline src="/portfolioSite/games/polyslayer/videos/animation/bitMorePreciseAnim.mp4"></video>
+<video loop autoplay muted playsinline src="/portfolioSite/games/blackbird/videos/animation/bitMorePreciseAnim.mp4"></video>
 
 ---
 
@@ -38,7 +38,7 @@ Sobald das Grundgerüst steht, werde ich kleinteiliger. Ich füge Zwischenschrit
 
 Im letzten Schritt folgt der Feinschliff. Wir korrigieren kleine Mesh-Fehler, fügen "Secondary Motion" hinzu (z. B. leichtes Nachschwingen von Rüstungsteilen) und stellen sicher, dass die Animation aus jedem Winkel gut aussieht.
 
-<video loop autoplay muted playsinline src="/portfolioSite/games/polyslayer/videos/animation/finalResult.mp4"></video>
+<video loop autoplay muted playsinline src="/portfolioSite/games/blackbird/videos/animation/finalResult.mp4"></video>
 
 ---
 
