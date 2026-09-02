@@ -1,7 +1,7 @@
 ---
 title: 'Rigging mit Rigify: Vom Mesh zum animierbaren Helden'
 description: 'So nutzen wir das Rigify Addon in Blender für PolySlayer, inklusive Troubleshooting zu Face-Bones und Sockets.'
-date: '2025-02-08'
+date: '2026-02-08'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/rigging_result.png' 
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Die Vision hinter PolySlayer: Epische Abenteuer für Helden mit wenig Zeit'
 description: 'Warum PolySlayer das perfekte RPG für zwischendurch ist. Unsere Vision von kompaktem, aber epischem Gameplay.'
-date: '2025-01-29'
+date: '2026-01-29'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/weightpainting/test_pose_wp_shaded.png'
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Vom Blockout zum Game-Ready: Der Animations-Workflow'
 description: 'Wie die Animationen für PolySlayer entstehen. Ein Einblick in den iterativen Prozess vom groben Timing bis zum finalen Schliff.'
-date: '2025-02-14'
+date: '2026-02-14'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/weightpainting/test_pose_wp_shaded.png'
 ---

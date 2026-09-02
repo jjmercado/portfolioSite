@@ -1,7 +1,7 @@
 ---
 title: 'PolySlayer Status-Quo: Der aktuelle Stand unserer Spieleentwicklung'
 description: 'Ein exklusiver Einblick in die bisherigen Meilensteine von PolySlayer. Was wir bereits erreicht haben und woran wir arbeiten.'
-date: '2025-01-30'
+date: '2026-01-30'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/placeholder.png' 
 ---

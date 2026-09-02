@@ -1,7 +1,7 @@
 ---
 title: 'Ausrüstungs-Texturing: Die komplette Rüstung im Detail'
 description: 'Wie wir über 5 Millionen Polygone in 26k Triangles backen – Texturing und Normal Maps bei PolySlayer.'
-date: '2025-02-06'
+date: '2026-02-06'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/texturing/texturing_result.png' 
 ---

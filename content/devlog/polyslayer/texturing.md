@@ -1,7 +1,7 @@
 ---
 title: 'Ausrüstungs-Texturing: Der erste Look für unseren Helden'
 description: 'Von grauen Modellen zu lebendigen Helden: Ein Blick auf das Texturing der Rüstung und den Einsatz von Normal Maps in PolySlayer.'
-date: '2025-02-05'
+date: '2026-02-05'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/texturing_result.png' 
 ---

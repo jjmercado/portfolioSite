@@ -1,7 +1,7 @@
 ---
 title: 'Weight Painting & Skinning: Wenn Metall auf Bewegung trifft'
 description: 'So meistern wir das Weight Painting in PolySlayer. Über Knautschzonen, starre Rüstungsteile und den korrekten Export für Sockets.'
-date: '2025-02-10'
+date: '2026-02-10'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/weightpainting_progress.png' 
 ---

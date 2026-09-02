@@ -1,7 +1,7 @@
 ---
 title: 'Warrior Retopology: Performance-Optimierung für flüssiges Gameplay'
 description: 'So optimieren wir unseren Hauptcharakter. Erfahren Sie mehr über Retopology und effizientes Character Design in PolySlayer.'
-date: '2025-02-04'
+date: '2026-02-04'
 project: 'PolySlayer'
 project_image: '/games/polyslayer/images/thirdCharacter.png' 
 ---
